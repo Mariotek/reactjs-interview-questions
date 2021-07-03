@@ -313,6 +313,7 @@ html {
 .markdown-preview.markdown-preview h2 {
   font-weight: 600;
 }
+.markdown-preview.markdown-preview a,
 .markdown-preview.markdown-preview h1 > a,
 .markdown-preview.markdown-preview h2 > a,
 .markdown-preview.markdown-preview h3 > a,
@@ -367,7 +368,7 @@ html {
   max-height: 212mm;
 }
 .markdown-preview.markdown-preview .a4.pishgoftar {
-  margin-top: 180mm;
+  margin-top: 190mm;
   min-height: 420mm;
   max-height: 420mm;
 }
@@ -428,6 +429,9 @@ html {
   min-height: 21mm !important;
   max-height: 21mm !important;
 }
+.markdown-preview.markdown-preview .show-in-print {
+  display: none;
+}
 @media print {
   .markdown-preview.markdown-preview .empty {
     display: block;
@@ -439,6 +443,9 @@ html {
   .markdown-preview.markdown-preview .main-title {
     display: none;
   }
+  .markdown-preview.markdown-preview .show-in-print {
+    display: block;
+  }
   .markdown-preview.markdown-preview .backToTop {
     font-size: 0;
   }
@@ -449,10 +456,26 @@ html {
     font-size: 1.3em !important;
   }
 }
-@page :left {
+.markdown-preview.markdown-preview .hider {
+  position: absolute;
+  top: 213mm;
+  left: 50%;
+  transform: translate(-50%, -20px);
   background: #000;
-  color: #fff;
-  padding-left: 200px;
+  width: 20px;
+  height: 20px;
+}
+.markdown-preview.markdown-preview .hider:nth-child(2) {
+  top: 426mm;
+}
+.markdown-preview.markdown-preview .hider:nth-child(3) {
+  top: 639mm;
+}
+.markdown-preview.markdown-preview .hider:nth-child(4) {
+  top: 852mm;
+}
+.markdown-preview.markdown-preview .hider:nth-child(5) {
+  top: 600mm;
 }
 
       </style>
@@ -1410,424 +1433,411 @@ html {
 </tr>
 <tr>
 <td>221</td>
-<td id="722678995f582424859b2f214849d7fe-q"><a class="fehrest" href="#722678995f582424859b2f214849d7fe">&#x62A;&#x627;&#x628;&#x639; memo &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x686;&#x6CC;&#x647;&#x61F;</a></td>
-</tr>
-<tr>
-<td>222</td>
-<td id="bf0fa285214ab55b12c8ade5dfb418de-q"><a class="fehrest" href="#bf0fa285214ab55b12c8ade5dfb418de">&#x62A;&#x627;&#x628;&#x639; lazy &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x686;&#x6CC;&#x647;&#x61F;</a></td>
-</tr>
-<tr>
-<td>223</td>
 <td id="93b3c7be1b23b704a907de2b34170951-q"><a class="fehrest" href="#93b3c7be1b23b704a907de2b34170951">&#x686;&#x637;&#x648;&#x631;&#x6CC; &#x628;&#x627; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x627;&#x632; &#x62A;&#x627;&#x628;&#x639; setState &#x627;&#x632; &#x631;&#x646;&#x62F;&#x631; &#x63A;&#x6CC;&#x631;&#x636;&#x631;&#x648;&#x631;&#x6CC; &#x62C;&#x644;&#x648;&#x6AF;&#x6CC;&#x631;&#x6CC; &#x6A9;&#x646;&#x6CC;&#x645;&#x61F;</a></td>
 </tr>
 <tr>
-<td>224</td>
+<td>222</td>
 <td id="0813864f0430e3b5432c0e2d3c79f1d4-q"><a class="fehrest" href="#0813864f0430e3b5432c0e2d3c79f1d4">&#x62A;&#x648;&#x6CC; &#x646;&#x633;&#x62E;&#x647; &#x6F1;&#x6F6; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x686;&#x637;&#x648;&#x631;&#x6CC; &#x645;&#x6CC;&#x634;&#x647; &#x622;&#x631;&#x627;&#x6CC;&#x647;&#x60C; Strings &#x648; &#x6CC;&#x627; &#x639;&#x62F;&#x62F; &#x631;&#x648; &#x631;&#x646;&#x62F;&#x631; &#x6A9;&#x646;&#x6CC;&#x645;&#x61F;</a></td>
 </tr>
 <tr>
-<td>225</td>
-<td id="3477b0f197f4f055510926dd6c549e70-q"><a class="fehrest" href="#3477b0f197f4f055510926dd6c549e70">&#x686;&#x637;&#x648;&#x631;&#x6CC; &#x645;&#x6CC;&#x634;&#x647; &#x627;&#x632; &#x62A;&#x639;&#x631;&#x6CC;&#x641; &#x648;&#x6CC;&#x698;&#x6AF;&#x6CC; &#x62F;&#x631; &#x6A9;&#x644;&#x627;&#x633; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x6A9;&#x631;&#x62F;&#x61F;</a></td>
-</tr>
-<tr>
-<td>226</td>
+<td>223</td>
 <td id="f22f727886f77111bdfef5b329b045f6-q"><a class="fehrest" href="#f22f727886f77111bdfef5b329b045f6">hook&#x647;&#x627; &#x686;&#x6CC; &#x647;&#x633;&#x62A;&#x646;&#x61F;</a></td>
 </tr>
 <tr>
-<td>227</td>
+<td>224</td>
 <td id="a2f148c936d3f1a1646774e0b782fcab-q"><a class="fehrest" href="#a2f148c936d3f1a1646774e0b782fcab">&#x686;&#x647; &#x642;&#x648;&#x627;&#x646;&#x6CC;&#x646;&#x6CC; &#x628;&#x631;&#x627;&#x6CC; &#x647;&#x648;&#x6A9;&#x200C;&#x647;&#x627; &#x628;&#x627;&#x6CC;&#x62F; &#x631;&#x639;&#x627;&#x6CC;&#x62A; &#x628;&#x634;&#x646;&#x61F;</a></td>
 </tr>
 <tr>
-<td>228</td>
+<td>225</td>
 <td id="3ebc137c2347125d5569fd0164985c8b-q"><a class="fehrest" href="#3ebc137c2347125d5569fd0164985c8b">&#x686;&#x637;&#x648;&#x631;&#x6CC; &#x645;&#x6CC;&#x634;&#x647; &#x627;&#x632; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x62F;&#x631;&#x633;&#x62A; &#x647;&#x648;&#x6A9;&#x200C;&#x647;&#x627; &#x627;&#x637;&#x645;&#x6CC;&#x646;&#x627;&#x646; &#x62D;&#x627;&#x635;&#x644; &#x6A9;&#x631;&#x62F;&#x61F;</a></td>
 </tr>
 <tr>
-<td>229</td>
+<td>226</td>
 <td id="7a9f74cd96109359dbe6a21746ac15d8-q"><a class="fehrest" href="#7a9f74cd96109359dbe6a21746ac15d8">&#x62A;&#x641;&#x627;&#x648;&#x62A;&#x200C;&#x647;&#x627;&#x6CC; Flux &#x648; Redux &#x6A9;&#x62F;&#x648;&#x645;&#x627; &#x647;&#x633;&#x62A;&#x646;&#x61F;</a></td>
 </tr>
 <tr>
-<td>230</td>
+<td>227</td>
 <td id="f22220282cd7ed75918bfded15d6caf8-q"><a class="fehrest" href="#f22220282cd7ed75918bfded15d6caf8">&#x645;&#x632;&#x627;&#x6CC;&#x627;&#x6CC; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x631;&#x648;&#x62A;&#x631; &#x646;&#x633;&#x62E;&#x647;&#x6F4; &#x686;&#x6CC;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>231</td>
+<td>228</td>
 <td id="9197fd1a7d532a5ca1a4c3d7a7cd6b74-q"><a class="fehrest" href="#9197fd1a7d532a5ca1a4c3d7a7cd6b74">&#x645;&#x6CC;&#x200C;&#x62A;&#x648;&#x646;&#x6CC; &#x631;&#x627;&#x62C;&#x639; &#x628;&#x647; &#x645;&#x62A;&#x62F; componentDidCatch &#x62A;&#x648;&#x636;&#x6CC;&#x62D; &#x628;&#x62F;&#x6CC;&#x61F;</a></td>
 </tr>
 <tr>
-<td>232</td>
+<td>229</td>
 <td id="7c728b4e444b6f1f88059311d7d0a603-q"><a class="fehrest" href="#7c728b4e444b6f1f88059311d7d0a603">&#x62F;&#x631; &#x686;&#x647; &#x633;&#x646;&#x627;&#x631;&#x6CC;&#x648;&#x6CC;&#x6CC; error boundary &#x62E;&#x637;&#x627; &#x631;&#x648; catch &#x646;&#x645;&#x6CC;&#x200C;&#x6A9;&#x646;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>233</td>
+<td>230</td>
 <td id="1931c5572d221740d6c970f171a8b93b-q"><a class="fehrest" href="#1931c5572d221740d6c970f171a8b93b">&#x686;&#x631;&#x627; &#x646;&#x6CC;&#x627;&#x632;&#x6CC; &#x628;&#x647; error boundaries &#x628;&#x631;&#x627;&#x6CC; event handler&#x647;&#x627; &#x646;&#x6CC;&#x633;&#x62A;&#x61F;</a></td>
 </tr>
 <tr>
-<td>234</td>
+<td>231</td>
 <td id="a363f84bccf025f7158ece092e52d115-q"><a class="fehrest" href="#a363f84bccf025f7158ece092e52d115">&#x62A;&#x641;&#x627;&#x648;&#x62A; &#x628;&#x644;&#x648;&#x6A9; try catch &#x648; error boundary&#x647;&#x627; &#x686;&#x6CC;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>235</td>
+<td>232</td>
 <td id="07d296d413f89f1e1cd5449807926fe2-q"><a class="fehrest" href="#07d296d413f89f1e1cd5449807926fe2">&#x631;&#x641;&#x62A;&#x627;&#x631; &#x62E;&#x637;&#x627;&#x647;&#x627;&#x6CC; uncaught &#x62F;&#x631; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; 16 &#x686;&#x6CC;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>236</td>
+<td>233</td>
 <td id="23749a99562639e311295d638e02ccb7-q"><a class="fehrest" href="#23749a99562639e311295d638e02ccb7">&#x645;&#x62D;&#x644; &#x645;&#x646;&#x627;&#x633;&#x628; &#x628;&#x631;&#x627;&#x6CC; &#x642;&#x631;&#x627;&#x631; &#x62F;&#x627;&#x62F;&#x646; error boundary &#x6A9;&#x62C;&#x627;&#x633;&#x62A;&#x61F;</a></td>
 </tr>
 <tr>
-<td>237</td>
+<td>234</td>
 <td id="4e33859af69a2da13e4e472365c2e4b1-q"><a class="fehrest" href="#4e33859af69a2da13e4e472365c2e4b1">&#x645;&#x632;&#x6CC;&#x62A; &#x686;&#x627;&#x67E; &#x634;&#x62F;&#x646; stack trace &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A;&#x200C;&#x647;&#x627; &#x62A;&#x648;&#x6CC; &#x645;&#x62A;&#x646; &#x627;&#x631;&#x648;&#x631; boundary &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x686;&#x6CC;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>238</td>
+<td>235</td>
 <td id="f639e77ce71c00afa90cd5340a3b58f2-q"><a class="fehrest" href="#f639e77ce71c00afa90cd5340a3b58f2">&#x645;&#x62A;&#x62F;&#x6CC; &#x6A9;&#x647; &#x62F;&#x631; &#x62A;&#x639;&#x631;&#x6CC;&#x641; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A;&#x200C;&#x647;&#x627;&#x6CC; class &#x627;&#x644;&#x632;&#x627;&#x645;&#x6CC;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>239</td>
+<td>236</td>
 <td id="ba45d9f61db853b105055460f196ad6c-q"><a class="fehrest" href="#ba45d9f61db853b105055460f196ad6c">&#x646;&#x648;&#x639;&#x200C;&#x647;&#x627;&#x6CC; &#x645;&#x645;&#x6A9;&#x646; &#x628;&#x631;&#x627;&#x6CC; &#x645;&#x642;&#x62F;&#x627;&#x631; &#x628;&#x627;&#x632;&#x6AF;&#x634;&#x62A;&#x6CC; &#x645;&#x62A;&#x62F; render &#x6A9;&#x62F;&#x648;&#x645;&#x627; &#x647;&#x633;&#x62A;&#x646;&#x61F;</a></td>
 </tr>
 <tr>
-<td>240</td>
+<td>237</td>
 <td id="9b2ec35584b9fe098efdca54ea0341d6-q"><a class="fehrest" href="#9b2ec35584b9fe098efdca54ea0341d6">&#x647;&#x62F;&#x641; &#x627;&#x635;&#x644;&#x6CC; &#x627;&#x632; &#x645;&#x62A;&#x62F; constructor &#x686;&#x6CC;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>241</td>
+<td>238</td>
 <td id="b2d2d5f97918801f68cc98e069630fed-q"><a class="fehrest" href="#b2d2d5f97918801f68cc98e069630fed">&#x622;&#x6CC;&#x627; &#x62A;&#x639;&#x631;&#x6CC;&#x641; &#x645;&#x62A;&#x62F; &#x633;&#x627;&#x632;&#x646;&#x62F;&#x647; &#x62A;&#x648;&#x6CC; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x627;&#x644;&#x632;&#x627;&#x645;&#x6CC;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>242</td>
+<td>239</td>
 <td id="67959eedaff26a7d04c4881dbbe7b15a-q"><a class="fehrest" href="#67959eedaff26a7d04c4881dbbe7b15a">Default prop&#x647;&#x627; &#x686;&#x6CC; &#x647;&#x633;&#x62A;&#x646;&#x61F;</a></td>
 </tr>
 <tr>
-<td>243</td>
+<td>240</td>
 <td id="53fa17032a2dfd895d347bcc2f80aae8-q"><a class="fehrest" href="#53fa17032a2dfd895d347bcc2f80aae8">&#x686;&#x631;&#x627; &#x646;&#x628;&#x627;&#x6CC;&#x62F; &#x62A;&#x627;&#x628;&#x639; setState &#x631;&#x648; &#x62A;&#x648;&#x6CC; &#x645;&#x62A;&#x62F; componentWillUnmount &#x641;&#x631;&#x627;&#x62E;&#x648;&#x627;&#x646;&#x6CC; &#x6A9;&#x631;&#x62F;&#x61F;</a></td>
 </tr>
 <tr>
-<td>244</td>
+<td>241</td>
 <td id="7e7235a190de65a4c43c1f245e78f8e9-q"><a class="fehrest" href="#7e7235a190de65a4c43c1f245e78f8e9">&#x6A9;&#x627;&#x631;&#x628;&#x631;&#x62F; &#x645;&#x62A;&#x62F; getDerivedStateFromError &#x686;&#x6CC;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>245</td>
+<td>242</td>
 <td id="c398f4ccd8ee3e1e79d64de724422489-q"><a class="fehrest" href="#c398f4ccd8ee3e1e79d64de724422489">&#x6A9;&#x62F;&#x648;&#x645; &#x645;&#x62A;&#x62F;&#x647;&#x627; &#x648; &#x628;&#x647; &#x686;&#x647; &#x62A;&#x631;&#x62A;&#x6CC;&#x628;&#x6CC; &#x62F;&#x631; &#x637;&#x648;&#x644; &#x631;&#x6CC;&#x200C;&#x631;&#x646;&#x62F;&#x631; &#x641;&#x631;&#x627;&#x62E;&#x648;&#x627;&#x646;&#x6CC; &#x645;&#x6CC;&#x634;&#x646;&#x61F;</a></td>
 </tr>
 <tr>
-<td>246</td>
+<td>243</td>
 <td id="35329d395cf8b7b29c488fab70574189-q"><a class="fehrest" href="#35329d395cf8b7b29c488fab70574189">&#x6A9;&#x62F;&#x648;&#x645; &#x645;&#x62A;&#x62F;&#x200C;&#x647;&#x627; &#x645;&#x648;&#x642;&#x639; error handling &#x641;&#x631;&#x627;&#x62E;&#x648;&#x627;&#x646;&#x6CC; &#x645;&#x6CC;&#x634;&#x646;&#x61F;</a></td>
 </tr>
 <tr>
-<td>247</td>
+<td>244</td>
 <td id="57cdfb12d073986446dc2eeed4d121f9-q"><a class="fehrest" href="#57cdfb12d073986446dc2eeed4d121f9">&#x6A9;&#x627;&#x631;&#x6A9;&#x631;&#x62F; &#x648;&#x6CC;&#x698;&#x6AF;&#x6CC; displayName &#x686;&#x6CC;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>248</td>
+<td>245</td>
 <td id="28382fb44181a0c25f7b912081713215-q"><a class="fehrest" href="#28382fb44181a0c25f7b912081713215">&#x67E;&#x634;&#x62A;&#x6CC;&#x628;&#x627;&#x646;&#x6CC; &#x645;&#x631;&#x648;&#x631;&#x6AF;&#x631;&#x647;&#x627; &#x628;&#x631;&#x627;&#x6CC; &#x628;&#x631;&#x646;&#x627;&#x645;&#x647; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A;&#x6CC; &#x686;&#x637;&#x648;&#x631;&#x6CC;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>249</td>
+<td>246</td>
 <td id="759f9a01df4f6da4020eb0ec9ef482c4-q"><a class="fehrest" href="#759f9a01df4f6da4020eb0ec9ef482c4">&#x647;&#x62F;&#x641; &#x627;&#x632; &#x645;&#x62A;&#x62F; unmountComponentAtNode &#x686;&#x6CC;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>250</td>
+<td>247</td>
 <td id="af1d6dc6166ab94b03455e38ff0136dc-q"><a class="fehrest" href="#af1d6dc6166ab94b03455e38ff0136dc">code-splitting &#x686;&#x6CC;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>251</td>
+<td>248</td>
 <td id="c3166544328cc0c8ae6418485d0f80cb-q"><a class="fehrest" href="#c3166544328cc0c8ae6418485d0f80cb">&#x645;&#x632;&#x627;&#x6CC;&#x627;&#x6CC; &#x62D;&#x627;&#x644;&#x62A; strict &#x686;&#x6CC;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>252</td>
+<td>249</td>
 <td id="ca2152ba0b7cb5017d6e643c42cfe8ae-q"><a class="fehrest" href="#ca2152ba0b7cb5017d6e643c42cfe8ae">Fragment&#x647;&#x627;&#x6CC; &#x62F;&#x627;&#x631;&#x627;&#x6CC; key &#x647;&#x633;&#x62A;&#x646;&#x61F;</a></td>
 </tr>
 <tr>
-<td>253</td>
+<td>250</td>
 <td id="386ae1bfc14f8c833b6bcf7fbf23144c-q"><a class="fehrest" href="#386ae1bfc14f8c833b6bcf7fbf23144c">&#x622;&#x6CC;&#x627; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x627;&#x632; &#x647;&#x645;&#x647;&#x200C;&#x6CC; attribute&#x647;&#x627;&#x6CC; HTML &#x67E;&#x634;&#x62A;&#x6CC;&#x628;&#x627;&#x646;&#x6CC; &#x645;&#x6CC;&#x200C;&#x6A9;&#x646;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>254</td>
+<td>251</td>
 <td id="7abb6fbac4b0f8a5b6d9a5aa47c879e4-q"><a class="fehrest" href="#7abb6fbac4b0f8a5b6d9a5aa47c879e4">&#x645;&#x62D;&#x62F;&#x648;&#x62F;&#x6CC;&#x62A;&#x200C;&#x647;&#x627;&#x6CC; HOC&#x647;&#x627; &#x686;&#x6CC; &#x647;&#x633;&#x62A;&#x646;&#x61F;</a></td>
 </tr>
 <tr>
-<td>255</td>
+<td>252</td>
 <td id="e88490c486fb785c0cb6f336e9f1a23d-q"><a class="fehrest" href="#e88490c486fb785c0cb6f336e9f1a23d">&#x686;&#x637;&#x648;&#x631;&#x6CC; &#x645;&#x6CC;&#x634;&#x647; forwardRefs &#x631;&#x648; &#x62A;&#x648;&#x6CC; DevTools &#x62F;&#x6CC;&#x628;&#x627;&#x6AF; &#x6A9;&#x631;&#x62F;&#x61F;</a></td>
 </tr>
 <tr>
-<td>256</td>
+<td>253</td>
 <td id="75c5a3b2e88f9fd48ad7e9ce340323db-q"><a class="fehrest" href="#75c5a3b2e88f9fd48ad7e9ce340323db">&#x645;&#x642;&#x62F;&#x627;&#x631; &#x6CC;&#x647; props &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A; &#x6A9;&#x6CC; true &#x645;&#x6CC;&#x634;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>257</td>
+<td>254</td>
 <td id="81b0882d6b5e0689a431501662461ec7-q"><a class="fehrest" href="#81b0882d6b5e0689a431501662461ec7">NextJS &#x686;&#x6CC;&#x647; &#x648; &#x648;&#x6CC;&#x698;&#x6AF;&#x6CC;&#x200C;&#x647;&#x627;&#x6CC; &#x627;&#x635;&#x644;&#x6CC;&#x634; &#x6A9;&#x62F;&#x648;&#x645;&#x627; &#x647;&#x633;&#x62A;&#x646;&#x61F;</a></td>
 </tr>
 <tr>
-<td>258</td>
+<td>255</td>
 <td id="de7055a570b0cda2527ece50ba48ea43-q"><a class="fehrest" href="#de7055a570b0cda2527ece50ba48ea43">&#x686;&#x637;&#x648;&#x631;&#x6CC; &#x645;&#x6CC;&#x200C;&#x62A;&#x648;&#x646;&#x6CC;&#x645; &#x6CC;&#x647; &#x62A;&#x627;&#x628;&#x639; event handler &#x631;&#x648; &#x628;&#x647; &#x6CC;&#x647; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A; &#x67E;&#x627;&#x633; &#x628;&#x62F;&#x6CC;&#x645;&#x61F;</a></td>
 </tr>
 <tr>
-<td>259</td>
+<td>256</td>
 <td id="0dee2749e08f10c64afddc34fcde11fe-q"><a class="fehrest" href="#0dee2749e08f10c64afddc34fcde11fe">&#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x627;&#x632; &#x62A;&#x648;&#x627;&#x628;&#x639; arrow &#x628;&#x631;&#x627;&#x6CC; &#x645;&#x62A;&#x62F;&#x647;&#x627;&#x6CC; render &#x62E;&#x648;&#x628;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>260</td>
+<td>257</td>
 <td id="7586d166207bbcbf9c31fa3054790ec3-q"><a class="fehrest" href="#7586d166207bbcbf9c31fa3054790ec3">&#x686;&#x637;&#x648;&#x631;&#x6CC; &#x627;&#x632; &#x627;&#x62C;&#x631;&#x627;&#x6CC; &#x686;&#x646;&#x62F;&#x628;&#x627;&#x631;&#x647; &#x6CC;&#x647; &#x62A;&#x627;&#x628;&#x639; &#x62C;&#x644;&#x648;&#x6AF;&#x6CC;&#x631;&#x6CC; &#x6A9;&#x646;&#x6CC;&#x645;&#x61F;</a></td>
 </tr>
 <tr>
-<td>261</td>
+<td>258</td>
 <td id="591934191494fbfdea2fde1937ba0b4a-q"><a class="fehrest" href="#591934191494fbfdea2fde1937ba0b4a">JSX &#x686;&#x637;&#x648;&#x631;&#x6CC; &#x627;&#x632; &#x62D;&#x645;&#x644;&#x647;&#x200C;&#x647;&#x627;&#x6CC; Injection &#x62C;&#x644;&#x648;&#x6AF;&#x6CC;&#x631;&#x6CC; &#x645;&#x6CC;&#x200C;&#x6A9;&#x646;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>262</td>
+<td>259</td>
 <td id="680047956b32470c872fd2770f8fc789-q"><a class="fehrest" href="#680047956b32470c872fd2770f8fc789">&#x686;&#x637;&#x648;&#x631;&#x6CC; element&#x647;&#x627;&#x6CC; &#x631;&#x646;&#x62F;&#x631; &#x634;&#x62F;&#x647; &#x631;&#x648; &#x622;&#x67E;&#x62F;&#x6CC;&#x62A; &#x6A9;&#x646;&#x6CC;&#x645;&#x61F;</a></td>
 </tr>
 <tr>
-<td>263</td>
+<td>260</td>
 <td id="b637467f23061c365fb76d1ce998aa0e-q"><a class="fehrest" href="#b637467f23061c365fb76d1ce998aa0e">&#x686;&#x631;&#x627; prop&#x647;&#x627; read only &#x647;&#x633;&#x62A;&#x646;&#x61F;</a></td>
 </tr>
 <tr>
-<td>264</td>
+<td>261</td>
 <td id="e7f8d1ccf0962cf8c5b1654470d49a48-q"><a class="fehrest" href="#e7f8d1ccf0962cf8c5b1654470d49a48">&#x686;&#x631;&#x627; &#x645;&#x6CC;&#x6AF;&#x6CC;&#x645; &#x62A;&#x627;&#x628;&#x639; setState &#x627;&#x632; &#x637;&#x631;&#x6CC;&#x642; merge &#x6A9;&#x631;&#x62F;&#x646; state &#x631;&#x627; &#x645;&#x62F;&#x6CC;&#x631;&#x6CC;&#x62A; &#x645;&#x6CC;&#x200C;&#x6A9;&#x646;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>265</td>
+<td>262</td>
 <td id="7b4172ebbd3d748a15359f3e0008e945-q"><a class="fehrest" href="#7b4172ebbd3d748a15359f3e0008e945">&#x686;&#x637;&#x648;&#x631;&#x6CC; &#x645;&#x6CC;&#x200C;&#x62A;&#x648;&#x646;&#x6CC;&#x645; &#x628;&#x647; &#x645;&#x62A;&#x62F; event handler &#x67E;&#x627;&#x631;&#x627;&#x645;&#x62A;&#x631; &#x67E;&#x627;&#x633; &#x628;&#x62F;&#x6CC;&#x645;&#x61F;</a></td>
 </tr>
 <tr>
-<td>266</td>
+<td>263</td>
 <td id="a5c98d2cd63a8bb9835660b8d92561e8-q"><a class="fehrest" href="#a5c98d2cd63a8bb9835660b8d92561e8">&#x686;&#x637;&#x648;&#x631;&#x6CC; &#x627;&#x632; &#x631;&#x646;&#x62F;&#x631; &#x645;&#x62C;&#x62F;&#x62F; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A;&#x200C;&#x647;&#x627; &#x62C;&#x644;&#x648;&#x6AF;&#x6CC;&#x631;&#x6CC; &#x6A9;&#x646;&#x6CC;&#x645;&#x61F;</a></td>
 </tr>
 <tr>
-<td>267</td>
+<td>264</td>
 <td id="34db4dc5d4ab3c2708f3b539710d51fb-q"><a class="fehrest" href="#34db4dc5d4ab3c2708f3b539710d51fb">&#x634;&#x631;&#x627;&#x6CC;&#x637;&#x6CC; &#x6A9;&#x647; &#x628;&#x62F;&#x648;&#x646; &#x645;&#x634;&#x6A9;&#x644; &#x67E;&#x631;&#x641;&#x648;&#x631;&#x645;&#x646;&#x633; &#x628;&#x62A;&#x648;&#x646;&#x6CC;&#x645; &#x627;&#x632; &#x627;&#x6CC;&#x646;&#x62F;&#x6A9;&#x633; &#x628;&#x647; &#x639;&#x646;&#x648;&#x627;&#x646; key &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x6A9;&#x646;&#x6CC;&#x645; &#x686;&#x6CC; &#x647;&#x633;&#x62A;&#x61F;</a></td>
 </tr>
 <tr>
-<td>268</td>
+<td>265</td>
 <td id="63809d4a61d722b96a20bd94da8e6a62-q"><a class="fehrest" href="#63809d4a61d722b96a20bd94da8e6a62">key&#x647;&#x627;&#x6CC; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x628;&#x627;&#x6CC;&#x62F; &#x628;&#x647; &#x635;&#x648;&#x631;&#x62A; &#x639;&#x645;&#x648;&#x645;&#x6CC; &#x645;&#x646;&#x62D;&#x635;&#x631; &#x628;&#x641;&#x631;&#x62F; &#x628;&#x627;&#x634;&#x646;&#x61F;</a></td>
 </tr>
 <tr>
-<td>269</td>
+<td>266</td>
 <td id="658c5b03c2d54a54acf53d662006c3c4-q"><a class="fehrest" href="#658c5b03c2d54a54acf53d662006c3c4">&#x6AF;&#x632;&#x6CC;&#x646;&#x647;&#x200C;&#x647;&#x627;&#x6CC; &#x645;&#x62D;&#x628;&#x648;&#x628; &#x628;&#x631;&#x627;&#x6CC; &#x645;&#x62F;&#x6CC;&#x631;&#x6CC;&#x62A; &#x641;&#x631;&#x645;&#x200C;&#x647;&#x627; &#x62A;&#x648;&#x6CC; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x6A9;&#x62F;&#x648;&#x645;&#x627; &#x647;&#x633;&#x62A;&#x646;&#x61F;</a></td>
 </tr>
 <tr>
-<td>270</td>
+<td>267</td>
 <td id="d0b1f408e3597c1bf120fb1b62592025-q"><a class="fehrest" href="#d0b1f408e3597c1bf120fb1b62592025">&#x645;&#x632;&#x627;&#x6CC;&#x627;&#x6CC; &#x6A9;&#x62A;&#x627;&#x628;&#x62E;&#x627;&#x646;&#x647; &#x641;&#x631;&#x645;&#x6CC;&#x6A9; &#x646;&#x628;&#x633;&#x62A; &#x628;&#x647; redux form &#x686;&#x6CC;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>271</td>
+<td>268</td>
 <td id="6e2f682be9f220779e564dc24e3723f8-q"><a class="fehrest" href="#6e2f682be9f220779e564dc24e3723f8">&#x686;&#x631;&#x627; &#x627;&#x62C;&#x628;&#x627;&#x631;&#x6CC; &#x628;&#x631;&#x627;&#x6CC; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x627;&#x632; &#x627;&#x631;&#x62B;&#x200C;&#x628;&#x631;&#x6CC; &#x62A;&#x648;&#x6CC; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x646;&#x6CC;&#x633;&#x62A;&#x61F; &#x645;&#x632;&#x6CC;&#x62A;&#x6CC; &#x62F;&#x627;&#x631;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>272</td>
+<td>269</td>
 <td id="cb1b1f6d30926b42fbe95f1823253490-q"><a class="fehrest" href="#cb1b1f6d30926b42fbe95f1823253490">&#x645;&#x6CC;&#x200C;&#x62A;&#x648;&#x646;&#x6CC;&#x645; &#x627;&#x632; web components &#x62A;&#x648;&#x6CC; &#x628;&#x631;&#x646;&#x627;&#x645;&#x647; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x6A9;&#x646;&#x6CC;&#x645;&#x61F;</a></td>
 </tr>
 <tr>
-<td>273</td>
+<td>270</td>
 <td id="75f265aa59eff942be0518e750a5b662-q"><a class="fehrest" href="#75f265aa59eff942be0518e750a5b662">dynamic import &#x686;&#x6CC;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>274</td>
+<td>271</td>
 <td id="999e5df6d25b9174836133069dbef83f-q"><a class="fehrest" href="#999e5df6d25b9174836133069dbef83f">loadable component&#x647;&#x627; &#x686;&#x6CC; &#x647;&#x633;&#x62A;&#x646;&#x61F;</a></td>
 </tr>
 <tr>
-<td>275</td>
+<td>272</td>
 <td id="d45749ee11763589f8510356b7e0607f-q"><a class="fehrest" href="#d45749ee11763589f8510356b7e0607f">&#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A; suspense &#x686;&#x6CC;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>276</td>
+<td>273</td>
 <td id="a7409e887ff98b11de37a7634fc4ee3a-q"><a class="fehrest" href="#a7409e887ff98b11de37a7634fc4ee3a">&#x686;&#x637;&#x648;&#x631;&#x6CC; &#x628;&#x647; &#x627;&#x632;&#x627;&#x6CC; route &#x645;&#x6CC;&#x200C;&#x62A;&#x648;&#x646;&#x6CC;&#x645; code splitting &#x62F;&#x627;&#x634;&#x62A;&#x647; &#x628;&#x627;&#x634;&#x6CC;&#x645;&#x61F;</a></td>
 </tr>
 <tr>
-<td>277</td>
+<td>274</td>
 <td id="233a79cee8d4326aa7366ca65d05f3f2-q"><a class="fehrest" href="#233a79cee8d4326aa7366ca65d05f3f2">&#x6CC;&#x647; &#x645;&#x62B;&#x627;&#x644; &#x627;&#x632; &#x646;&#x62D;&#x648;&#x647; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x627;&#x632; context &#x645;&#x6CC;&#x632;&#x646;&#x6CC;&#x61F;</a></td>
 </tr>
 <tr>
-<td>278</td>
+<td>275</td>
 <td id="d883aa80c48f9413cd096902209711ef-q"><a class="fehrest" href="#d883aa80c48f9413cd096902209711ef">&#x647;&#x62F;&#x641; &#x627;&#x632; &#x645;&#x642;&#x62F;&#x627;&#x631; &#x67E;&#x6CC;&#x634;&#x200C;&#x641;&#x631;&#x636; &#x62A;&#x648;&#x6CC; context &#x686;&#x6CC;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>279</td>
+<td>276</td>
 <td id="22068c2703869076a5652b76c51bfc36-q"><a class="fehrest" href="#22068c2703869076a5652b76c51bfc36">&#x686;&#x637;&#x648;&#x631;&#x6CC; &#x627;&#x632; contextType &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x645;&#x6CC;&#x200C;&#x6A9;&#x646;&#x6CC;&#x646;&#x61F;</a></td>
 </tr>
 <tr>
-<td>280</td>
+<td>277</td>
 <td id="126f7cca2a46db6a324a567a902bf9c4-q"><a class="fehrest" href="#126f7cca2a46db6a324a567a902bf9c4">consumer &#x686;&#x6CC;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>281</td>
+<td>278</td>
 <td id="fabe82bc313e39ff5448846aee06c69a-q"><a class="fehrest" href="#fabe82bc313e39ff5448846aee06c69a">&#x686;&#x637;&#x648;&#x631;&#x6CC; &#x645;&#x633;&#x627;&#x626;&#x644; &#x645;&#x631;&#x628;&#x648;&#x637; &#x628;&#x647; &#x67E;&#x631;&#x641;&#x648;&#x631;&#x645;&#x646;&#x633; &#x628;&#x627; context &#x631;&#x648; &#x62D;&#x644; &#x645;&#x6CC;&#x200C;&#x6A9;&#x646;&#x6CC;&#x646;&#x61F;</a></td>
 </tr>
 <tr>
-<td>282</td>
+<td>279</td>
 <td id="d5280dbf45db638a45a4838052ce3d70-q"><a class="fehrest" href="#d5280dbf45db638a45a4838052ce3d70">&#x647;&#x62F;&#x641; &#x627;&#x632; forward ref &#x62A;&#x648;&#x6CC; HOC&#x647;&#x627; &#x686;&#x6CC;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>283</td>
+<td>280</td>
 <td id="b06b76f97aa81b45a771dee99d929c05-q"><a class="fehrest" href="#b06b76f97aa81b45a771dee99d929c05">&#x62A;&#x648;&#x6CC; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A;&#x200C;&#x647;&#x627; &#x645;&#x6CC;&#x200C;&#x62A;&#x648;&#x646;&#x6CC;&#x645; &#x67E;&#x631;&#x627;&#x67E; ref &#x62F;&#x627;&#x634;&#x62A;&#x647; &#x628;&#x627;&#x634;&#x6CC;&#x645;&#x61F;</a></td>
 </tr>
 <tr>
-<td>284</td>
+<td>281</td>
 <td id="94a7560004948e898555241d7832a1d7-q"><a class="fehrest" href="#94a7560004948e898555241d7832a1d7">&#x686;&#x631;&#x627; &#x62F;&#x631; &#x647;&#x646;&#x6AF;&#x627;&#x645; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x627;&#x632; ForwardRef&#x647;&#x627; &#x646;&#x6CC;&#x627;&#x632; &#x628;&#x647; &#x627;&#x62D;&#x62A;&#x6CC;&#x627;&#x637; &#x628;&#x6CC;&#x634;&#x62A;&#x631;&#x6CC; &#x62F;&#x631; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x627;&#x632; &#x6A9;&#x62A;&#x627;&#x628;&#x62E;&#x627;&#x646;&#x647;&#x200C;&#x647;&#x627;&#x6CC; &#x62C;&#x627;&#x646;&#x628;&#x6CC; &#x62F;&#x627;&#x631;&#x6CC;&#x645;&#x61F;</a></td>
 </tr>
 <tr>
-<td>285</td>
+<td>282</td>
 <td id="0f9623cc03d4a1458d59b09681dae8c4-q"><a class="fehrest" href="#0f9623cc03d4a1458d59b09681dae8c4">&#x686;&#x637;&#x648;&#x631;&#x6CC; &#x628;&#x62F;&#x648;&#x646; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x627;&#x632; ES6 &#x6A9;&#x644;&#x627;&#x633; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A; &#x628;&#x633;&#x627;&#x632;&#x6CC;&#x645;&#x61F;</a></td>
 </tr>
 <tr>
-<td>286</td>
+<td>283</td>
 <td id="21c6959b94f6c7fc80cf649742cf4acd-q"><a class="fehrest" href="#21c6959b94f6c7fc80cf649742cf4acd">&#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x627;&#x632; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x628;&#x62F;&#x648;&#x646; JSX &#x645;&#x645;&#x6A9;&#x646; &#x627;&#x633;&#x62A;&#x61F;</a></td>
 </tr>
 <tr>
-<td>287</td>
+<td>284</td>
 <td id="e0cdd243bd268c6bc40c51971d29552e-q"><a class="fehrest" href="#e0cdd243bd268c6bc40c51971d29552e">&#x627;&#x644;&#x6AF;&#x648;&#x631;&#x6CC;&#x62A;&#x645;&#x200C;&#x647;&#x627;&#x6CC; diffing &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x686;&#x6CC; &#x647;&#x633;&#x62A;&#x646;&#x61F;</a></td>
 </tr>
 <tr>
-<td>288</td>
+<td>285</td>
 <td id="4b4064a5b8a8e2a3d957ec0fe7069f75-q"><a class="fehrest" href="#4b4064a5b8a8e2a3d957ec0fe7069f75">&#x642;&#x648;&#x627;&#x646;&#x6CC;&#x646;&#x6CC; &#x6A9;&#x647; &#x62A;&#x648;&#x633;&#x637; &#x627;&#x644;&#x6AF;&#x648;&#x631;&#x6CC;&#x62A;&#x645;&#x200C;&#x647;&#x627;&#x6CC; diffing &#x67E;&#x648;&#x634;&#x634; &#x62F;&#x627;&#x62F;&#x647; &#x645;&#x6CC;&#x200C;&#x634;&#x648;&#x646;&#x62F; &#x6A9;&#x62F;&#x627;&#x645; &#x647;&#x633;&#x62A;&#x646;&#x61F;</a></td>
 </tr>
 <tr>
-<td>289</td>
+<td>286</td>
 <td id="3d21109d8c0c019a067b77eae2b18afb-q"><a class="fehrest" href="#3d21109d8c0c019a067b77eae2b18afb">&#x686;&#x647; &#x645;&#x648;&#x642;&#x639;&#x6CC; &#x646;&#x6CC;&#x627;&#x632; &#x647;&#x633;&#x62A; &#x6A9;&#x647; &#x627;&#x632; ref&#x647;&#x627; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x6A9;&#x646;&#x6CC;&#x645;&#x61F;</a></td>
 </tr>
 <tr>
-<td>290</td>
+<td>287</td>
 <td id="09e7d6d9365026005fd53dec1dd0073d-q"><a class="fehrest" href="#09e7d6d9365026005fd53dec1dd0073d">&#x628;&#x631;&#x627;&#x6CC; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x627;&#x632; render prop&#x647;&#x627; &#x644;&#x627;&#x632;&#x645;&#x647; &#x6A9;&#x647; &#x627;&#x633;&#x645; prop &#x631;&#x648; render &#x628;&#x632;&#x627;&#x631;&#x6CC;&#x645;&#x61F;</a></td>
 </tr>
 <tr>
-<td>291</td>
+<td>288</td>
 <td id="1ec42730feecddde3681e9908b94fc72-q"><a class="fehrest" href="#1ec42730feecddde3681e9908b94fc72">&#x645;&#x634;&#x6A9;&#x644; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x627;&#x632; render props &#x628;&#x627; pure component&#x647;&#x627; &#x686;&#x6CC;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>292</td>
+<td>289</td>
 <td id="3b8c07cb4463d30ac3851bc10b475ba1-q"><a class="fehrest" href="#3b8c07cb4463d30ac3851bc10b475ba1">&#x686;&#x637;&#x648;&#x631;&#x6CC; &#x628;&#x627; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x627;&#x632; render props &#x645;&#x6CC;&#x200C;&#x62A;&#x648;&#x646;&#x6CC;&#x645; HOC &#x627;&#x6CC;&#x62C;&#x627;&#x62F; &#x6A9;&#x646;&#x6CC;&#x645;&#x61F;</a></td>
 </tr>
 <tr>
-<td>293</td>
+<td>290</td>
 <td id="4d788c9b6e932b199c7fbe32a63b21d5-q"><a class="fehrest" href="#4d788c9b6e932b199c7fbe32a63b21d5">&#x62A;&#x6A9;&#x646;&#x6CC;&#x6A9; windowing &#x686;&#x6CC;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>294</td>
+<td>291</td>
 <td id="ccd32fe0919733c6a0e61cb54bd7bcdb-q"><a class="fehrest" href="#ccd32fe0919733c6a0e61cb54bd7bcdb">&#x62A;&#x648;&#x6CC; JSX &#x6CC;&#x647; &#x645;&#x642;&#x62F;&#x627;&#x631; falsy &#x631;&#x648; &#x686;&#x637;&#x648;&#x631;&#x6CC; &#x686;&#x627;&#x67E; &#x6A9;&#x646;&#x6CC;&#x645;&#x61F;</a></td>
 </tr>
 <tr>
-<td>295</td>
+<td>292</td>
 <td id="ecc74698f922ed9b244aedda60e8195f-q"><a class="fehrest" href="#ecc74698f922ed9b244aedda60e8195f">&#x6CC;&#x647; &#x645;&#x648;&#x631;&#x62F; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x645;&#x639;&#x645;&#x648;&#x644; &#x627;&#x632; portals &#x645;&#x62B;&#x627;&#x644; &#x645;&#x6CC;&#x632;&#x646;&#x6CC;&#x61F;</a></td>
 </tr>
 <tr>
-<td>296</td>
+<td>293</td>
 <td id="84ec765d7203ebd17a491810a4434cb6-q"><a class="fehrest" href="#84ec765d7203ebd17a491810a4434cb6">&#x62A;&#x648;&#x6CC; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A;&#x200C;&#x647;&#x627;&#x6CC; &#x6A9;&#x646;&#x62A;&#x631;&#x644; &#x646;&#x634;&#x62F;&#x647; &#x686;&#x637;&#x648;&#x631;&#x6CC; &#x645;&#x642;&#x62F;&#x627;&#x631;&#x6CC; &#x67E;&#x6CC;&#x634; &#x641;&#x631;&#x636; &#x627;&#x636;&#x627;&#x641;&#x647; &#x6A9;&#x646;&#x6CC;&#x645;&#x61F;</a></td>
 </tr>
 <tr>
-<td>297</td>
+<td>294</td>
 <td id="4f539c55ee5ab2adf0d7782f94456799-q"><a class="fehrest" href="#4f539c55ee5ab2adf0d7782f94456799">stack &#x645;&#x648;&#x631;&#x62F;&#x639;&#x644;&#x627;&#x642;&#x647; &#x634;&#x645;&#x627; &#x628;&#x631;&#x627;&#x6CC; &#x6A9;&#x627;&#x646;&#x641;&#x6CC;&#x6AF; &#x67E;&#x631;&#x648;&#x698;&#x647; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x686;&#x6CC;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>298</td>
+<td>295</td>
 <td id="1a649f36605c041906f43e78d2991061-q"><a class="fehrest" href="#1a649f36605c041906f43e78d2991061">&#x62A;&#x641;&#x627;&#x648;&#x62A;&#x200C; DOM &#x648;&#x627;&#x642;&#x639;&#x6CC; &#x648; Virtual DOM &#x686;&#x6CC;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>299</td>
+<td>296</td>
 <td id="ad201c73315c4fd5d94e5d52319347bc-q"><a class="fehrest" href="#ad201c73315c4fd5d94e5d52319347bc">&#x686;&#x637;&#x648;&#x631;&#x6CC; Bootstrap &#x631;&#x648; &#x628;&#x647; &#x6CC;&#x647; &#x628;&#x631;&#x646;&#x627;&#x645;&#x647; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A;&#x6CC; &#x627;&#x636;&#x627;&#x641;&#x647; &#x6A9;&#x646;&#x6CC;&#x645;&#x61F;</a></td>
 </tr>
 <tr>
-<td>300</td>
+<td>297</td>
 <td id="2d0a4110482a819c93aaa326355b5b84-q"><a class="fehrest" href="#2d0a4110482a819c93aaa326355b5b84">&#x645;&#x6CC;&#x200C;&#x62A;&#x648;&#x646;&#x6CC; &#x6CC;&#x647; &#x644;&#x6CC;&#x633;&#x62A;&#x6CC; &#x627;&#x632; &#x645;&#x639;&#x631;&#x648;&#x641;&#x200C;&#x62A;&#x631;&#x6CC;&#x646; &#x648;&#x628;&#x200C;&#x633;&#x627;&#x6CC;&#x62A;&#x200C;&#x647;&#x627;&#x6CC;&#x6CC; &#x6A9;&#x647; &#x627;&#x632; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x645;&#x6CC;&#x200C;&#x6A9;&#x646;&#x646; &#x631;&#x648; &#x628;&#x6AF;&#x6CC;&#x61F;</a></td>
 </tr>
 <tr>
-<td>301</td>
+<td>298</td>
 <td id="f0d327f406fe68e15046e2e41bfd7238-q"><a class="fehrest" href="#f0d327f406fe68e15046e2e41bfd7238">&#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x627;&#x632; &#x62A;&#x6A9;&#x646;&#x6CC;&#x6A9; CSS In JS &#x62A;&#x648; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x62A;&#x648;&#x635;&#x6CC;&#x647; &#x645;&#x6CC;&#x634;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>302</td>
+<td>299</td>
 <td id="a1c45f7a230116243069035dc123a315-q"><a class="fehrest" href="#a1c45f7a230116243069035dc123a315">&#x644;&#x627;&#x632;&#x645;&#x647; &#x647;&#x645;&#x647; &#x6A9;&#x644;&#x627;&#x633; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A;&#x200C;&#x647;&#x627; &#x631;&#x648; &#x62A;&#x628;&#x62F;&#x6CC;&#x644; &#x6A9;&#x646;&#x6CC;&#x645; &#x628;&#x647; &#x647;&#x648;&#x6A9;&#x61F;</a></td>
 </tr>
 <tr>
-<td>303</td>
+<td>300</td>
 <td id="023417c4586bd4fc118a8da8b8bdd2fb-q"><a class="fehrest" href="#023417c4586bd4fc118a8da8b8bdd2fb">&#x686;&#x637;&#x648;&#x631;&#x6CC; &#x645;&#x6CC;&#x634;&#x647; &#x628;&#x627; &#x647;&#x648;&#x6A9;&#x200C;&#x647;&#x627;&#x6CC; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x62F;&#x6CC;&#x62A;&#x627; fetch &#x6A9;&#x631;&#x62F;&#x61F;</a></td>
 </tr>
 <tr>
-<td>304</td>
+<td>301</td>
 <td id="971d4c9996b72e5bdbf1d5c9e9cbec53-q"><a class="fehrest" href="#971d4c9996b72e5bdbf1d5c9e9cbec53">&#x647;&#x648;&#x6A9;&#x200C;&#x647;&#x627; &#x647;&#x645;&#x647; &#x645;&#x648;&#x627;&#x631;&#x62F; &#x6A9;&#x627;&#x631;&#x628;&#x631;&#x62F; &#x6A9;&#x644;&#x627;&#x633;&#x200C;&#x647;&#x627; &#x631;&#x648; &#x67E;&#x648;&#x634;&#x634; &#x645;&#x6CC;&#x62F;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>305</td>
+<td>302</td>
 <td id="9969ef21907d23b1e93ddc983c5265bb-q"><a class="fehrest" href="#9969ef21907d23b1e93ddc983c5265bb">&#x646;&#x633;&#x62E;&#x647; &#x67E;&#x627;&#x6CC;&#x62F;&#x627;&#x631; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x6A9;&#x647; &#x627;&#x632; &#x647;&#x648;&#x6A9; &#x67E;&#x634;&#x62A;&#x6CC;&#x628;&#x627;&#x646;&#x6CC; &#x645;&#x6CC;&#x200C;&#x6A9;&#x646;&#x647; &#x6A9;&#x62F;&#x648;&#x645;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>306</td>
+<td>303</td>
 <td id="a688960316717c1479a9b337a38dde92-q"><a class="fehrest" href="#a688960316717c1479a9b337a38dde92">&#x686;&#x631;&#x627; &#x627;&#x632; &#x62D;&#x627;&#x644;&#x62A; destructuring &#x622;&#x631;&#x627;&#x6CC;&#x647; &#x628;&#x631;&#x627;&#x6CC; useState &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x645;&#x6CC;&#x200C;&#x6A9;&#x646;&#x6CC;&#x645;&#x61F;</a></td>
 </tr>
 <tr>
-<td>307</td>
+<td>304</td>
 <td id="5a6845e8684fcb66fa488410bcd4d6ff-q"><a class="fehrest" href="#5a6845e8684fcb66fa488410bcd4d6ff">&#x645;&#x646;&#x627;&#x628;&#x639;&#x6CC; &#x6A9;&#x647; &#x628;&#x627;&#x639;&#x62B; &#x645;&#x639;&#x631;&#x641;&#x6CC; &#x627;&#x6CC;&#x62F;&#x647; &#x647;&#x648;&#x6A9;&#x200C;&#x647;&#x627; &#x634;&#x62F;&#x646; &#x6A9;&#x62F;&#x648;&#x645;&#x627; &#x628;&#x648;&#x62F;&#x646;&#x61F;</a></td>
 </tr>
 <tr>
-<td>308</td>
+<td>305</td>
 <td id="32897ad80b576b302d29c968c2819dda-q"><a class="fehrest" href="#32897ad80b576b302d29c968c2819dda">&#x686;&#x637;&#x648;&#x631;&#x6CC; &#x628;&#x647; API&#x647;&#x627;&#x6CC; &#x636;&#x631;&#x648;&#x631;&#x6CC; &#x627;&#x62C;&#x632;&#x627;&#x6CC; &#x648;&#x628; &#x62F;&#x633;&#x62A;&#x631;&#x633;&#x6CC; &#x67E;&#x6CC;&#x62F;&#x627; &#x6A9;&#x646;&#x6CC;&#x645;&#x61F;</a></td>
 </tr>
 <tr>
-<td>309</td>
+<td>306</td>
 <td id="179739bc81aa016a52c01c89e977f575-q"><a class="fehrest" href="#179739bc81aa016a52c01c89e977f575">formik &#x686;&#x6CC;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>310</td>
+<td>307</td>
 <td id="ff30e288b80cf23b1abf114b03266572-q"><a class="fehrest" href="#ff30e288b80cf23b1abf114b03266572">middleware&#x647;&#x627;&#x6CC; &#x645;&#x631;&#x633;&#x648;&#x645; &#x628;&#x631;&#x627;&#x6CC; &#x645;&#x62F;&#x6CC;&#x631;&#x6CC;&#x62A; &#x627;&#x631;&#x62A;&#x628;&#x627;&#x637;&#x200C;&#x647;&#x627;&#x6CC; asynchronous &#x62A;&#x648;&#x6CC; Redux &#x6A9;&#x62F;&#x648;&#x645;&#x627; &#x647;&#x633;&#x62A;&#x646;&#x61F;</a></td>
 </tr>
 <tr>
-<td>311</td>
+<td>308</td>
 <td id="c64c5677067ed1b8a6254ce97b577f0d-q"><a class="fehrest" href="#c64c5677067ed1b8a6254ce97b577f0d">&#x645;&#x631;&#x648;&#x631;&#x6AF;&#x631;&#x647;&#x627; &#x6A9;&#x62F; JSX &#x631;&#x648; &#x645;&#x62A;&#x648;&#x62C;&#x647; &#x645;&#x6CC;&#x634;&#x646;&#x61F;</a></td>
 </tr>
 <tr>
-<td>312</td>
+<td>309</td>
 <td id="c095e1a1acd025087681d255303b3240-q"><a class="fehrest" href="#c095e1a1acd025087681d255303b3240">Data flow &#x6CC;&#x627; &#x62C;&#x631;&#x6CC;&#x627;&#x646; &#x62F;&#x627;&#x62F;&#x647; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x631;&#x648; &#x62A;&#x648;&#x636;&#x6CC;&#x62D; &#x645;&#x6CC;&#x62F;&#x6CC;&#x61F;</a></td>
 </tr>
 <tr>
-<td>313</td>
+<td>310</td>
 <td id="416a338173d702476c3e4b389d3eec11-q"><a class="fehrest" href="#416a338173d702476c3e4b389d3eec11">react scripts &#x686;&#x6CC;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>314</td>
+<td>311</td>
 <td id="c34f4aacfe87fd6298a74cc5bf83decd-q"><a class="fehrest" href="#c34f4aacfe87fd6298a74cc5bf83decd">&#x648;&#x6CC;&#x698;&#x6AF;&#x6CC;&#x200C;&#x647;&#x627;&#x6CC; create react app &#x686;&#x6CC;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>315</td>
+<td>312</td>
 <td id="b3944290f1ed88ae3e3984de418861e0-q"><a class="fehrest" href="#b3944290f1ed88ae3e3984de418861e0">&#x647;&#x62F;&#x641; &#x627;&#x632; &#x645;&#x62A;&#x62F; renderToNodeStream &#x686;&#x6CC;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>316</td>
+<td>313</td>
 <td id="ddeae9008b00016cc2bb85eddde8a102-q"><a class="fehrest" href="#ddeae9008b00016cc2bb85eddde8a102">MobX &#x686;&#x6CC;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>317</td>
+<td>314</td>
 <td id="8a94a7aed32d9c3e864510a12961b76c-q"><a class="fehrest" href="#8a94a7aed32d9c3e864510a12961b76c">&#x62A;&#x641;&#x627;&#x648;&#x62A;&#x200C;&#x647;&#x627;&#x6CC; &#x628;&#x6CC;&#x646; Redux &#x648; MobX &#x6A9;&#x62F;&#x648;&#x645;&#x627; &#x647;&#x633;&#x62A;&#x646;&#x61F;</a></td>
 </tr>
 <tr>
-<td>318</td>
+<td>315</td>
 <td id="003fb08f54cd66af68c7657786d5361a-q"><a class="fehrest" href="#003fb08f54cd66af68c7657786d5361a">&#x644;&#x627;&#x632;&#x645;&#x647; &#x642;&#x628;&#x644; &#x627;&#x632; &#x634;&#x631;&#x648;&#x639; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; ES6 &#x631;&#x648; &#x6CC;&#x627;&#x62F; &#x6AF;&#x631;&#x641;&#x62A;&#x61F;</a></td>
 </tr>
 <tr>
-<td>319</td>
+<td>316</td>
 <td id="f6ab7c3ffd7d3ee2fa212f8b6e359f72-q"><a class="fehrest" href="#f6ab7c3ffd7d3ee2fa212f8b6e359f72">Concurrent Rendering &#x686;&#x6CC;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>320</td>
+<td>317</td>
 <td id="0e0570d0d42b0c8a070818ce76225ce3-q"><a class="fehrest" href="#0e0570d0d42b0c8a070818ce76225ce3">&#x62A;&#x641;&#x627;&#x648;&#x62A; &#x628;&#x6CC;&#x646; &#x62D;&#x627;&#x644;&#x62A; async &#x648; concurrent &#x686;&#x6CC;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>321</td>
+<td>318</td>
 <td id="01660b48c466e7656c9b008c134ad88a-q"><a class="fehrest" href="#01660b48c466e7656c9b008c134ad88a">&#x645;&#x6CC;&#x200C;&#x62A;&#x648;&#x646;&#x6CC;&#x645; &#x627;&#x632; &#x622;&#x62F;&#x631;&#x633;&#x200C;&#x647;&#x627;&#x6CC; &#x62F;&#x627;&#x631;&#x627;&#x6CC; url &#x62C;&#x627;&#x648;&#x627;&#x633;&#x6A9;&#x631;&#x6CC;&#x67E;&#x62A; &#x62F;&#x631; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; 16.9 &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x6A9;&#x646;&#x6CC;&#x645;&#x61F;</a></td>
 </tr>
 <tr>
-<td>322</td>
+<td>319</td>
 <td id="7ce4c258da123f239d37743c1e897d94-q"><a class="fehrest" href="#7ce4c258da123f239d37743c1e897d94">&#x647;&#x62F;&#x641; &#x627;&#x632; &#x67E;&#x644;&#x627;&#x6AF;&#x6CC;&#x646; eslint &#x628;&#x631;&#x627;&#x6CC; &#x647;&#x648;&#x6A9;&#x200C;&#x647;&#x627; &#x686;&#x6CC;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>323</td>
+<td>320</td>
 <td id="1922d831cb8dd7f99ddf4dc37ff24dfb-q"><a class="fehrest" href="#1922d831cb8dd7f99ddf4dc37ff24dfb">&#x62A;&#x641;&#x627;&#x648;&#x62A;&#x200C;&#x647;&#x627;&#x6CC; Imperative &#x648; Declarative &#x62A;&#x648;&#x6CC; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x686;&#x6CC;&#x647;&#x61F;</a></td>
 </tr>
 <tr>
-<td>324</td>
+<td>321</td>
 <td id="6cd7bbb136c1c64cc8ae132e945c4616-q"><a class="fehrest" href="#6cd7bbb136c1c64cc8ae132e945c4616">&#x645;&#x632;&#x627;&#x6CC;&#x627;&#x6CC; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x627;&#x632; &#x62A;&#x627;&#x6CC;&#x67E; &#x627;&#x633;&#x6A9;&#x631;&#x6CC;&#x67E;&#x62A; &#x628;&#x627; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x686;&#x6CC;&#x647;&#x61F;</a></td>
 </tr>
 </tbody>
 </table>
 <p>  
-  
       </p><div class="a4 empty"></div>
       <div class="rtl a4 pishgoftar">
        <h3><a id="71d9e63b2ee0dfec157818ea43392bf9" class="anchor" href="#71d9e63b2ee0dfec157818ea43392bf9">&#x67E;&#x6CC;&#x634;&#x6AF;&#x641;&#x62A;&#x627;&#x631;</a></h3>
@@ -2050,6 +2060,11 @@ html {
 <p>&#x647;&#x631; &#x62F;&#x648;&#x62A;&#x627;&#x634;&#x648;&#x646; javascript plain object &#x647;&#x633;&#x62A;&#x646;&#x60C; &#x6CC;&#x639;&#x646;&#x6CC; &#x6CC;&#x647; object &#x6A9;&#x647; &#x6CC;&#x647; &#x633;&#x631;&#x6CC; property &#x62F;&#x627;&#x631;&#x647; &#x6A9;&#x647; &#x628;&#x647; &#x6CC;&#x647; &#x633;&#x631;&#x6CC; &#x645;&#x642;&#x62F;&#x627;&#x631; &#x62E;&#x62A;&#x645; &#x645;&#x6CC;&#x634;&#x646; &#x648; &#x62E;&#x628;&#x631;&#x6CC; &#x627;&#x632; &#x641;&#x627;&#x646;&#x6A9;&#x634;&#x646; &#x648; &#x686;&#x6CC;&#x632;&#x647;&#x627;&#x6CC; &#x62F;&#x6CC;&#x6AF;&#x647; &#x631;&#x648;&#x6CC; &#x627;&#x6CC;&#x646; object &#x648;&#x62C;&#x648;&#x62F; &#x646;&#x62F;&#x627;&#x631;&#x647;(&#x62A;&#x642;&#x631;&#x6CC;&#x628;&#x627;&#x650;). &#x647;&#x631;&#x62F;&#x648;&#x62A;&#x627;&#x634;&#x648;&#x646; &#x648;&#x638;&#x6CC;&#x641;&#x647; &#x62F;&#x627;&#x631;&#x646; &#x645;&#x642;&#x627;&#x62F;&#x6CC;&#x631;&#x6CC; &#x6A9;&#x647; &#x631;&#x648;&#x6CC; render &#x62A;&#x627;&#x62B;&#x6CC;&#x631; &#x6AF;&#x630;&#x627;&#x631; &#x647;&#x633;&#x62A; &#x631;&#x648; &#x646;&#x6AF;&#x647;&#x200C;&#x62F;&#x627;&#x631;&#x6CC; &#x6A9;&#x646;&#x646; &#x627;&#x645;&#x627; &#x639;&#x645;&#x644;&#x6A9;&#x631;&#x62F;&#x634;&#x648;&#x646; &#x628;&#x627; &#x62A;&#x648;&#x62C;&#x647; &#x628;&#x647; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A; &#x645;&#x62A;&#x641;&#x627;&#x648;&#x62A; &#x62E;&#x648;&#x627;&#x647;&#x62F; &#x628;&#x648;&#x62F;. Props &#x634;&#x628;&#x6CC;&#x647; &#x628;&#x647; &#x67E;&#x627;&#x631;&#x627;&#x645;&#x62A;&#x631;&#x647;&#x627;&#x6CC; &#x648;&#x631;&#x648;&#x62F;&#x6CC; &#x6CC;&#x6A9; &#x641;&#x627;&#x646;&#x6A9;&#x634;&#x646;&#x60C; &#x628;&#x647; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A; &#x67E;&#x627;&#x633; &#x62F;&#x627;&#x62F;&#x647; &#x645;&#x6CC;&#x634;&#x646; &#x62F;&#x631; &#x62D;&#x627;&#x644;&#x6CC;&#x6A9;&#x647; state &#x634;&#x628;&#x6CC;&#x647; &#x628;&#x647; &#x645;&#x62A;&#x63A;&#x6CC;&#x6CC;&#x631;&#x647;&#x627;&#x6CC;&#x6CC; &#x6A9;&#x647; &#x62F;&#x627;&#x62E;&#x644; &#x641;&#x627;&#x646;&#x6A9;&#x634;&#x646; &#x633;&#x627;&#x62E;&#x62A;&#x647; &#x634;&#x62F;&#x646;&#x60C; &#x62A;&#x648;&#x633;&#x637; &#x62E;&#x648;&#x62F; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A; &#x627;&#x6CC;&#x62C;&#x627;&#x62F; &#x648; &#x645;&#x62F;&#x6CC;&#x631;&#x6CC;&#x62A; &#x645;&#x6CC;&#x634;&#x647;.</p>
 <p><strong><a class="backToTop" href="#aa24d155bd0c57726bce896c45e5812d-q">&#x641;&#x647;&#x631;&#x633;&#x62A;</a></strong></p>
 </li>
+</ol>
+<div class="show-in-print">
+  <br>
+</div>
+<ol start="11">
 <li>
 <h3><a id="0f514ac36b1feb48ec193ac32ca80d20" class="anchor" href="#0f514ac36b1feb48ec193ac32ca80d20">&#x686;&#x631;&#x627; &#x646;&#x628;&#x627;&#x6CC;&#x62F; state &#x631;&#x648; &#x645;&#x633;&#x62A;&#x642;&#x6CC;&#x645;&#x627; &#x622;&#x67E;&#x62F;&#x6CC;&#x62A; &#x6A9;&#x646;&#x6CC;&#x645;&#x61F;</a></h3>
 <p>&#x627;&#x6AF;&#x647; &#x6CC;&#x647; &#x628;&#x627;&#x631; &#x62A;&#x644;&#x627;&#x634; &#x6A9;&#x646;&#x6CC;&#x62F; &#x6A9;&#x647; &#x645;&#x633;&#x62A;&#x642;&#x6CC;&#x645;&#x627; state &#x631;&#x648; &#x622;&#x67E;&#x62F;&#x6CC;&#x62A; &#x6A9;&#x646;&#x6CC;&#x62F; &#x645;&#x62A;&#x648;&#x62C;&#x647; &#x645;&#x6CC;&#x200C;&#x634;&#x6CC;&#x646; &#x6A9;&#x647; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A; &#x634;&#x645;&#x627; &#x645;&#x62C;&#x62F;&#x62F;&#x627; render &#x646;&#x645;&#x6CC;&#x634;&#x647;.</p>
@@ -2116,6 +2131,11 @@ callback function &#x632;&#x645;&#x627;&#x646;&#x6CC; &#x6A9;&#x647; setState &#
 </pre> </span>
 <p><strong><a class="backToTop" href="#1cb0a1174216e1693ad25b500156993d-q">&#x641;&#x647;&#x631;&#x633;&#x62A;</a></strong></p>
 </li>
+</ol>
+<div class="show-in-print">
+  <br>
+</div>
+<ol start="13">
 <li>
 <h3><a id="ca7a66ab4d7e4bb61ba0028be0274dc2" class="anchor" href="#ca7a66ab4d7e4bb61ba0028be0274dc2">&#x62A;&#x641;&#x627;&#x648;&#x62A; &#x628;&#x6CC;&#x646; &#x646;&#x62D;&#x648;&#x647; &#x645;&#x62F;&#x6CC;&#x631;&#x6CC;&#x62A; &#x631;&#x648;&#x6CC;&#x62F;&#x627;&#x62F; HTML &#x648; React &#x686;&#x6CC;&#x647;&#x61F;</a></h3>
 <ol>
@@ -2244,6 +2264,11 @@ callback function &#x632;&#x645;&#x627;&#x646;&#x6CC; &#x6A9;&#x647; setState &#
 </ol>
 <p><strong><a class="backToTop" href="#77a6c6bc8d4157a1d7f5734331429c59-q">&#x641;&#x647;&#x631;&#x633;&#x62A;</a></strong></p>
 </li>
+</ol>
+<div class="show-in-print">
+  <br>
+</div>
+<ol start="19">
 <li>
 <h3><a id="18c647d1130658885113725e54106417" class="anchor" href="#18c647d1130658885113725e54106417">&#x6A9;&#x627;&#x631;&#x628;&#x631;&#x62F; ref&#x647;&#x627; &#x686;&#x6CC;&#x647;&#x61F;</a></h3>
 <p><em>ref</em> &#x628;&#x647; &#x639;&#x646;&#x648;&#x627;&#x646; &#x6CC;&#x647; &#x645;&#x631;&#x62C;&#x639; &#x628;&#x631;&#x627;&#x6CC; &#x62F;&#x633;&#x62A;&#x631;&#x633;&#x6CC; &#x645;&#x633;&#x62A;&#x642;&#x6CC;&#x645; &#x628;&#x647; &#x627;&#x650;&#x644;&#x645;&#x627;&#x646; &#x645;&#x648;&#x631;&#x62F;&#x646;&#x638;&#x631;&#x645;&#x648;&#x646; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x645;&#x6CC;&#x634;&#x647;. &#x62A;&#x627; &#x62D;&#x62F; &#x627;&#x645;&#x6A9;&#x627;&#x646; &#x648; &#x62A;&#x648;&#x6CC; &#x627;&#x6A9;&#x62B;&#x631; &#x645;&#x648;&#x627;&#x642;&#x639; &#x628;&#x647;&#x62A;&#x631;&#x647; &#x627;&#x632; &#x627;&#x648;&#x646;&#x627; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; <em>&#x646;&#x6A9;&#x646;&#x6CC;&#x645;</em>&#x60C; &#x627;&#x644;&#x628;&#x62A;&#x647; &#x62E;&#x6CC;&#x644;&#x6CC; &#x645;&#x6CC;&#x200C;&#x62A;&#x648;&#x646;&#x646; &#x6A9;&#x645;&#x6A9; &#x6A9;&#x646;&#x646;&#x62F;&#x647; &#x628;&#x627;&#x634;&#x646; &#x686;&#x648;&#x646; &#x62F;&#x633;&#x62A;&#x631;&#x633;&#x6CC; &#x645;&#x633;&#x62A;&#x642;&#x6CC;&#x645;&#x6CC; &#x628;&#x647; DOM element &#x6CC;&#x627; instance &#x627;&#x635;&#x644;&#x6CC; component &#x628;&#x647;&#x645;&#x648;&#x646; &#x645;&#x6CC;&#x62F;&#x646;.</p>
@@ -2322,6 +2347,11 @@ callback function &#x632;&#x645;&#x627;&#x646;&#x6CC; &#x6A9;&#x647; setState &#
 </pre> </span>
 <p><strong><a class="backToTop" href="#a77a052945092ea61cfab11b09623356-q">&#x641;&#x647;&#x631;&#x633;&#x62A;</a></strong></p>
 </li>
+</ol>
+<div class="show-in-print">
+  <br>
+</div>
+<ol start="23">
 <li>
 <h3><a id="639b255ba80458fcd08900efc3522f0d" class="anchor" href="#639b255ba80458fcd08900efc3522f0d">&#x686;&#x631;&#x627; Ref&#x647;&#x627;&#x6CC; &#x645;&#x62A;&#x646;&#x6CC; &#x645;&#x646;&#x642;&#x636;&#x6CC; &#x645;&#x62D;&#x633;&#x648;&#x628; &#x645;&#x6CC;&#x200C;&#x634;&#x648;&#x646;&#x62F;&#x61F;</a></h3>
 <p>&#x627;&#x6AF;&#x647; &#x642;&#x628;&#x644;&#x627; &#x628;&#x627; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x6A9;&#x627;&#x631; &#x6A9;&#x631;&#x62F;&#x647; &#x628;&#x627;&#x634;&#x6CC;&#x646;&#x60C; &#x627;&#x62D;&#x62A;&#x645;&#x644;&#x627; &#x628;&#x627; &#x6CC;&#x647; API &#x642;&#x62F;&#x6CC;&#x645;&#x6CC; &#x62A;&#x631; &#x622;&#x634;&#x646;&#x627; &#x647;&#x633;&#x62A;&#x6CC;&#x646; &#x6A9;&#x647; &#x62A;&#x648;&#x6CC; &#x627;&#x648;&#x646; &#x648;&#x6CC;&#x698;&#x6AF;&#x6CC; ref &#x6CC;&#x647; &#x631;&#x634;&#x62A;&#x647;&#x200C;&#x633;&#x62A;&#x60C; &#x645;&#x62B;&#x644; <code>ref=&apos;textInput&apos;</code> &#x648; DOM &#x628;&#x647; &#x635;&#x648;&#x631;&#x62A; <code>refs.textInput</code> &#x642;&#x627;&#x628;&#x644; &#x62F;&#x633;&#x62A;&#x631;&#x633;&#x6CC;&#x200C;&#x640;&#x647;. &#x627;&#x644;&#x628;&#x62A;&#x647; &#x627;&#x6CC;&#x646; &#x648;&#x6CC;&#x698;&#x6AF;&#x6CC; &#x62A;&#x648;&#x6CC; &#x646;&#x633;&#x62E;&#x647; &#x6F1;&#x6F6; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; <strong>&#x62D;&#x630;&#x641;</strong> &#x634;&#x62F;&#x647; &#x648; &#x62A;&#x648;&#x635;&#x6CC;&#x647; &#x646;&#x645;&#x6CC;&#x634;&#x647; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x628;&#x634;&#x647;&#x60C; &#x641;&#x642;&#x637; &#x628;&#x631;&#x627;&#x6CC; &#x6CC;&#x627;&#x62F;&#x6AF;&#x6CC;&#x631;&#x6CC; &#x647;&#x633;&#x62A;.</p>
@@ -2382,14 +2412,16 @@ callback function &#x632;&#x645;&#x627;&#x646;&#x6CC; &#x6A9;&#x647; setState &#
 <p>Fiber &#x645;&#x648;&#x62A;&#x648;&#x631; &#x62C;&#x62F;&#x6CC;&#x62F; &#x628;&#x631;&#x627;&#x6CC; &#x639;&#x645;&#x644;&#x6CC;&#x627;&#x62A; <em>reconciliation</em> &#x647;&#x633;&#x62A; &#x6CC;&#x627; &#x645;&#x6CC;&#x634;&#x647; &#x6AF;&#x641;&#x62A; &#x6A9;&#x647; &#x67E;&#x6CC;&#x627;&#x62F;&#x647;&#x200C;&#x633;&#x627;&#x632;&#x6CC; &#x645;&#x62C;&#x62F;&#x62F; &#x627;&#x644;&#x6AF;&#x648;&#x631;&#x6CC;&#x62A;&#x645; &#x647;&#x633;&#x62A;&#x647; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x646;&#x633;&#x62E;&#x647; &#x6F1;&#x6F6; &#x647;&#x633;&#x62A;. &#x647;&#x62F;&#x641; &#x67E;&#x6CC;&#x627;&#x62F;&#x647;&#x200C;&#x633;&#x627;&#x632;&#x6CC; ReactFiber &#x628;&#x631;&#x627;&#x6CC; &#x628;&#x647;&#x628;&#x648;&#x62F; &#x6A9;&#x627;&#x631;&#x6A9;&#x631;&#x62F; &#x62A;&#x648;&#x6CC; &#x62C;&#x627;&#x647;&#x627;&#x6CC;&#x6CC; &#x645;&#x62B;&#x644; &#x627;&#x6CC;&#x62C;&#x627;&#x62F; &#x627;&#x646;&#x6CC;&#x645;&#x6CC;&#x634;&#x646;&#x60C; &#x6A9;&#x627;&#x631; &#x631;&#x648;&#x6CC; layout&#x60C; &#x6A9;&#x627;&#x631; &#x628;&#x627; gesture&#x647;&#x627; &#x648; &#x642;&#x627;&#x628;&#x644;&#x6CC;&#x62A; &#x627;&#x6CC;&#x646;&#x6A9;&#x647; &#x639;&#x645;&#x644;&#x6CC;&#x627;&#x62A; &#x62F;&#x631; &#x62D;&#x627;&#x644; &#x627;&#x62C;&#x631;&#x627; &#x631;&#x648; &#x645;&#x62A;&#x648;&#x642;&#x641;&#x60C; &#x642;&#x637;&#x639; &#x6CC;&#x627; &#x645;&#x62C;&#x62F;&#x62F;&#x627; &#x641;&#x639;&#x627;&#x644; &#x6A9;&#x646;&#x6CC;&#x645; &#x633;&#x627;&#x62E;&#x62A;&#x647; &#x634;&#x62F;&#x647;. &#x627;&#x644;&#x628;&#x62A;&#x647; &#x645;&#x6CC;&#x200C;&#x62A;&#x648;&#x646;&#x647; &#x628;&#x631;&#x627;&#x6CC; &#x627;&#x648;&#x644;&#x648;&#x6CC;&#x62A;&#x200C;&#x628;&#x646;&#x62F;&#x6CC; &#x628;&#x631;&#x648;&#x632;&#x633;&#x627;&#x646;&#x6CC;&#x200C;&#x647;&#x627;&#x6CC; &#x644;&#x627;&#x632;&#x645; &#x62A;&#x648;&#x6CC; DOM &#x631;&#x648; &#x647;&#x645; &#x645;&#x62F;&#x6CC;&#x631;&#x6CC;&#x62A; &#x6A9;&#x646;&#x647;.</p>
 <p><strong><a class="backToTop" href="#cb230b1285c5648f49e9a309f1434257-q">&#x641;&#x647;&#x631;&#x633;&#x62A;</a></strong></p>
 </li>
+</ol>
+<div class="show-in-print">
+  <br>
+</div>
+<ol start="28">
 <li>
 <h3><a id="0cf293da53d99fd1663321953ff8712b" class="anchor" href="#0cf293da53d99fd1663321953ff8712b">&#x647;&#x62F;&#x641; &#x627;&#x635;&#x644;&#x6CC; React Fiber &#x686;&#x6CC;&#x647;&#x61F;</a></h3>
 <p>&#x647;&#x62F;&#x641; &#x67E;&#x6CC;&#x627;&#x62F;&#x647;&#x200C;&#x633;&#x627;&#x632;&#x6CC; ReactFiber &#x628;&#x631;&#x627;&#x6CC; &#x628;&#x647;&#x628;&#x648;&#x62F; &#x6A9;&#x627;&#x631;&#x6A9;&#x631;&#x62F; &#x62A;&#x648;&#x6CC; &#x646;&#x627;&#x62D;&#x6CC;&#x647;&#x200C;&#x647;&#x627;&#x6CC;&#x6CC; &#x645;&#x62B;&#x644; &#x627;&#x646;&#x6CC;&#x645;&#x6CC;&#x634;&#x646;&#x60C; layout&#x60C; &#x6A9;&#x627;&#x631; &#x628;&#x627; gesture&#x647;&#x627; &#x628;&#x648;&#x62F;. &#x645;&#x6CC;&#x634;&#x647; &#x6AF;&#x641;&#x62A; &#x645;&#x647;&#x645;&#x200C;&#x62A;&#x631;&#x6CC;&#x646; &#x648;&#x6CC;&#x698;&#x6AF;&#x6CC; <strong>incremental-rendering</strong> &#x628;&#x648;&#x62F;&#x647; &#x6A9;&#x647; &#x642;&#x627;&#x628;&#x644;&#x6CC;&#x62A; &#x628;&#x62E;&#x634;&#x200C;&#x628;&#x646;&#x62F;&#x6CC;(chunk &#x6A9;&#x631;&#x62F;&#x646;) &#x639;&#x645;&#x644;&#x6CC;&#x627;&#x62A; &#x627;&#x62C;&#x631;&#x627;&#x6CC;&#x6CC; &#x648; &#x645;&#x62A;&#x648;&#x642;&#x641; &#x648; &#x627;&#x62C;&#x631;&#x627; &#x6A9;&#x631;&#x62F;&#x646; &#x627;&#x648;&#x646; &#x62A;&#x648;&#x6CC; &#x641;&#x631;&#x6CC;&#x645;&#x200C;&#x647;&#x627;&#x6CC; &#x645;&#x62E;&#x62A;&#x644;&#x641; &#x647;&#x633;&#x62A;.</p>
 <p><strong><a class="backToTop" href="#0cf293da53d99fd1663321953ff8712b-q">&#x641;&#x647;&#x631;&#x633;&#x62A;</a></strong></p>
 </li>
-</ol>
-<br>
-<ol start="29">
 <li>
 <h3><a id="737e03292058f000a554c7dfa5ac23f5" class="anchor" href="#737e03292058f000a554c7dfa5ac23f5">&#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A;&#x200C;&#x647;&#x627;&#x6CC; &#x6A9;&#x646;&#x62A;&#x631;&#x644; &#x634;&#x62F;&#x647; &#x686;&#x6CC; &#x647;&#x633;&#x62A;&#x646;&#x61F;</a></h3>
 <p>&#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A;&#x6CC; &#x6A9;&#x647; &#x639;&#x646;&#x627;&#x635;&#x631; &#x648;&#x631;&#x648;&#x62F;&#x6CC; &#x631;&#x648; &#x62A;&#x648;&#x6CC; &#x641;&#x631;&#x645;&#x200C;&#x647;&#x627;&#x6CC; &#x648;&#x631;&#x648;&#x62F;&#x6CC; &#x6A9;&#x627;&#x631;&#x628;&#x631; &#x6A9;&#x646;&#x62A;&#x631;&#x644;&#x200C;&#x645;&#x6CC;&#x200C;&#x6A9;&#x646;&#x647; &#x628;&#x647; &#x639;&#x646;&#x648;&#x627;&#x646; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A; &#x6A9;&#x646;&#x62A;&#x631;&#x644; &#x634;&#x62F;&#x647; &#x634;&#x646;&#x627;&#x62E;&#x62A;&#x647; &#x645;&#x6CC;&#x634;&#x646;&#x60C; &#x62A;&#x648;&#x6CC; &#x627;&#x6CC;&#x646; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A;&#x200C;&#x647;&#x627; &#x647;&#x631; &#x62A;&#x63A;&#x6CC;&#x6CC;&#x631; state &#x6CC;&#x647; &#x62A;&#x627;&#x628;&#x639; &#x646;&#x6AF;&#x647;&#x62F;&#x627;&#x631;&#x646;&#x62F;&#x647; &#x645;&#x631;&#x62A;&#x628;&#x637; &#x628;&#x627;&#x647;&#x627;&#x634; &#x631;&#x648; &#x62F;&#x627;&#x631;&#x647;.</p>
@@ -2599,6 +2631,11 @@ callback function &#x632;&#x645;&#x627;&#x646;&#x6CC; &#x6A9;&#x647; setState &#
 </pre> </span>
 <p><strong><a class="backToTop" href="#2bb8bf16b4d899c2399593a46a84b67c-q">&#x641;&#x647;&#x631;&#x633;&#x62A;</a></strong></p>
 </li>
+</ol>
+<div class="show-in-print">
+  <br>
+</div>
+<ol start="40">
 <li>
 <h3><a id="8b4f8ed7a76e217da74e29b3eff24e33" class="anchor" href="#8b4f8ed7a76e217da74e29b3eff24e33">&#x686;&#x631;&#x627; &#x62A;&#x648;&#x6CC; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A;&#x200C;&#x647;&#x627;&#x6CC; &#x6A9;&#x644;&#x627;&#x633; &#x628;&#x627;&#x6CC;&#x62F; &#x62A;&#x648;&#x6CC; constructor &#x62A;&#x627;&#x628;&#x639; super &#x631;&#x648; &#x628;&#x627; &#x645;&#x642;&#x62F;&#x627;&#x631; props &#x635;&#x62F;&#x627; &#x628;&#x632;&#x646;&#x6CC;&#x645;&#x61F;</a></h3>
 <p>&#x6A9;&#x644;&#x627;&#x633; constructor &#x62A;&#x627; &#x632;&#x645;&#x627;&#x646;&#x6CC; &#x6A9;&#x647; &#x645;&#x62A;&#x62F; <code>super</code> &#x635;&#x62F;&#x627; &#x632;&#x62F;&#x647; &#x646;&#x634;&#x62F;&#x647; &#x646;&#x645;&#x6CC;&#x200C;&#x62A;&#x648;&#x646;&#x647; &#x627;&#x632; <code>this</code> &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x6A9;&#x646;&#x647;. &#x647;&#x645;&#x6CC;&#x646; &#x645;&#x648;&#x631;&#x62F; &#x62F;&#x631; &#x631;&#x627;&#x628;&#x637;&#x647; &#x628;&#x627; &#x6A9;&#x644;&#x627;&#x633;&#x200C;&#x647;&#x627;&#x6CC; ES6 &#x647;&#x645; &#x635;&#x62F;&#x642; &#x645;&#x6CC;&#x200C;&#x6A9;&#x646;&#x647;. &#x62F;&#x644;&#x6CC;&#x644; &#x627;&#x635;&#x644;&#x6CC; &#x627;&#x646;&#x62A;&#x642;&#x627;&#x644; &#x67E;&#x627;&#x631;&#x627;&#x645;&#x62A;&#x631;&#x200C;&#x647;&#x627;&#x6CC; props &#x628;&#x647; &#x645;&#x62A;&#x62F; &#x641;&#x631;&#x627;&#x62E;&#x648;&#x627;&#x646; <code>super</code> &#x62F;&#x633;&#x62A;&#x631;&#x633;&#x6CC; &#x62F;&#x627;&#x634;&#x62A;&#x646; &#x628;&#x647; <code>this.props</code> &#x62A;&#x648;&#x6CC; constructor &#x647;&#x633;&#x62A;&#x634;.</p>
@@ -2633,6 +2670,11 @@ callback function &#x632;&#x645;&#x627;&#x646;&#x6CC; &#x6A9;&#x647; setState &#
 <p>&#x6A9;&#x62F; &#x628;&#x627;&#x644;&#x627; &#x646;&#x634;&#x648;&#x646; &#x645;&#x6CC;&#x62F;&#x647; &#x6A9;&#x647; <code>this.props</code> &#x641;&#x642;&#x637; &#x62A;&#x648;&#x6CC; constructor &#x645;&#x62A;&#x641;&#x627;&#x648;&#x62A; &#x639;&#x645;&#x644; &#x645;&#x6CC;&#x200C;&#x6A9;&#x646;&#x647; &#x648; &#x628;&#x6CC;&#x631;&#x648;&#x646; &#x627;&#x632; constructor &#x639;&#x645;&#x644;&#x6A9;&#x631;&#x62F;&#x634; &#x639;&#x627;&#x62F;&#x6CC;&#x647;&#x60C; &#x62F;&#x644;&#x6CC;&#x644;&#x634; &#x647;&#x645; &#x627;&#x6CC;&#x646;&#x647; &#x6A9;&#x647; &#x62A;&#x648;&#x6CC; &#x645;&#x62A;&#x62F; &#x633;&#x627;&#x632;&#x646;&#x62F;&#x647; &#x6A9;&#x644;&#x627;&#x633;&#x60C; &#x647;&#x646;&#x648;&#x632; instance &#x6A9;&#x627;&#x645;&#x644; &#x633;&#x627;&#x62E;&#x62A;&#x647; &#x646;&#x634;&#x62F;&#x647; &#x648; &#x62F;&#x631; &#x62D;&#x627;&#x644; &#x633;&#x627;&#x62E;&#x62A;&#x647; &#x634;&#x62F;&#x646;&#x647;.</p>
 <p><strong><a class="backToTop" href="#8b4f8ed7a76e217da74e29b3eff24e33-q">&#x641;&#x647;&#x631;&#x633;&#x62A;</a></strong></p>
 </li>
+</ol>
+<div class="show-in-print">
+  <br>
+</div>
+<ol start="41">
 <li>
 <h3><a id="aa435d0c1a39733f638ebb8445ce77f2" class="anchor" href="#aa435d0c1a39733f638ebb8445ce77f2">reconciliation &#x686;&#x6CC;&#x647;&#x61F;</a></h3>
 <p>&#x648;&#x642;&#x62A;&#x6CC; state&#x200C; &#x6CC;&#x627; props &#x6CC;&#x647; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A; &#x62A;&#x63A;&#x6CC;&#x6CC;&#x631;&#x200C;&#x645;&#x6CC;&#x200C;&#x6A9;&#x646;&#x647;&#x60C; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x628;&#x627; &#x645;&#x642;&#x627;&#x6CC;&#x633;&#x647; &#x639;&#x646;&#x635;&#x631; &#x62A;&#x627;&#x632;&#x647; return &#x634;&#x62F;&#x647; &#x648; &#x646;&#x645;&#x648;&#x646;&#x647; render &#x634;&#x62F;&#x647; &#x642;&#x628;&#x644;&#x6CC; &#x62A;&#x635;&#x645;&#x6CC;&#x645; &#x645;&#x6CC;&#x6AF;&#x6CC;&#x631;&#x647; &#x6A9;&#x647; &#x628;&#x647; &#x631;&#x648;&#x632;&#x631;&#x633;&#x627;&#x646;&#x6CC; DOM &#x648;&#x627;&#x642;&#x639;&#x627; &#x636;&#x631;&#x648;&#x631;&#x6CC;&#x647; &#x6CC;&#x627; &#x646;&#x647;. &#x648;&#x642;&#x62A;&#x6CC; &#x627;&#x6CC;&#x646; &#x62F;&#x648; &#x645;&#x642;&#x62F;&#x627;&#x631; &#x628;&#x627; &#x647;&#x645; &#x628;&#x631;&#x627;&#x628;&#x631; &#x646;&#x628;&#x627;&#x634;&#x647;&#x60C; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x628;&#x647; &#x631;&#x648;&#x632;&#x631;&#x633;&#x627;&#x646;&#x6CC; DOM &#x631;&#x648; &#x627;&#x646;&#x62C;&#x627;&#x645; &#x645;&#x6CC;&#x62F;&#x647;. &#x628;&#x647; &#x627;&#x6CC;&#x646; &#x641;&#x631;&#x627;&#x6CC;&#x646;&#x62F; <em>reconciliation</em> &#x6AF;&#x641;&#x62A;&#x647; &#x645;&#x6CC;&#x634;&#x647;.</p>
@@ -2796,8 +2838,9 @@ prop&#x200C;&#x647;&#x627;&#x6CC; &#x627;&#x62C;&#x628;&#x627;&#x631;&#x6CC; &#x
 <li><p><strong>PropTypes.symbol</strong></p></li>
 <li><p><strong>PropTypes.any</strong></p></li>
 </ol>
+<br>
 <p><code>PropType</code>&#x647;&#x627; &#x631;&#x648; &#x628;&#x631;&#x627;&#x6CC; &#x6CC;&#x647; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A; &#x62A;&#x633;&#x62A;&#x6CC; &#x628;&#x647; &#x627;&#x633;&#x645; <code>User</code> &#x627;&#x6CC;&#x646;&#x637;&#x648;&#x631;&#x6CC; &#x645;&#x6CC;&#x634;&#x647; &#x62A;&#x639;&#x631;&#x6CC;&#x641; &#x6A9;&#x631;&#x62F;:</p>
- <span align="left" dir="ltr">
+<span align="left" dir="ltr">
 <pre data-role="codeBlock" data-info="jsx harmony" class="language-jsx"><span class="token keyword module">import</span> <span class="token imports"><span class="token maybe-class-name">React</span></span> <span class="token keyword module">from</span> <span class="token string">&quot;react&quot;</span><span class="token punctuation">;</span>
 <span class="token keyword module">import</span> <span class="token imports"><span class="token maybe-class-name">PropTypes</span></span> <span class="token keyword module">from</span> <span class="token string">&quot;prop-types&quot;</span><span class="token punctuation">;</span>
 
@@ -2829,6 +2872,11 @@ prop&#x200C;&#x647;&#x627;&#x6CC; &#x627;&#x62C;&#x628;&#x627;&#x631;&#x6CC; &#x
 </ol>
 <p><strong><a class="backToTop" href="#61a47d0f1c0a449fbd255ab2ae5dc1c9-q">&#x641;&#x647;&#x631;&#x633;&#x62A;</a></strong></p>
 </li>
+</ol>
+<div class="show-in-print">
+  <br>
+</div>
+<ol start="53">
 <li>
 <h3><a id="2186287510c37241234433344ba9d8b6" class="anchor" href="#2186287510c37241234433344ba9d8b6">&#x645;&#x62D;&#x62F;&#x648;&#x62F;&#x6CC;&#x62A;&#x200C;&#x647;&#x627;&#x6CC; React &#x686;&#x6CC;&#x647;&#x61F;</a></h3>
 <ol>
@@ -2880,10 +2928,10 @@ prop&#x200C;&#x647;&#x627;&#x6CC; &#x627;&#x62C;&#x628;&#x627;&#x631;&#x6CC; &#x
 <p><strong><a class="backToTop" href="#7416a3c7f28783bb10397edcd3114697-q">&#x641;&#x647;&#x631;&#x633;&#x62A;</a></strong></p>
 </li>
 <li>
-<p>###&#x686;&#x637;&#x648;&#x631;&#x6CC; &#x627;&#x632; error boundary&#x647;&#x627; &#x62A;&#x648;&#x6CC; &#x646;&#x633;&#x62E;&#x647; 15 &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x6A9;&#x646;&#x6CC;&#x645;&#x61F;</p>
+<h3><a id="f7f21cc2ff0812fed5eb0bf6338dea21" class="anchor" href="#f7f21cc2ff0812fed5eb0bf6338dea21">&#x686;&#x637;&#x648;&#x631;&#x6CC; &#x627;&#x632; error boundary&#x647;&#x627; &#x62A;&#x648;&#x6CC; &#x646;&#x633;&#x62E;&#x647; 15 &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x6A9;&#x646;&#x6CC;&#x645;&#x61F;</a></h3>
 <p>&#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x62A;&#x648;&#x6CC; &#x646;&#x633;&#x62E;&#x647; 15 &#x628;&#x627; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x627;&#x632; &#x645;&#x62A;&#x62F; <code>unstabled_handleError</code> <em>error boundary</em>&#x647;&#x627; &#x631;&#x648; &#x645;&#x62F;&#x6CC;&#x631;&#x6CC;&#x62A; &#x6A9;&#x631;&#x62F;&#x647;.<br>
 &#x627;&#x6CC;&#x646; &#x645;&#x62A;&#x62F; &#x62A;&#x648;&#x6CC; &#x646;&#x633;&#x62E;&#x647; 16 &#x628;&#x647; &#x200D;&#x200D;<code>componentDidCatch</code> &#x62A;&#x63A;&#x6CC;&#x6CC;&#x631; &#x6A9;&#x631;&#x62F;&#x647;.</p>
-<p><strong><a class="backToTop" href="#3f6693f0807a5fbfe66a3c6fdf4733ba-q">&#x641;&#x647;&#x631;&#x633;&#x62A;</a></strong></p>
+<p><strong><a class="backToTop" href="#f7f21cc2ff0812fed5eb0bf6338dea21-q">&#x641;&#x647;&#x631;&#x633;&#x62A;</a></strong></p>
 </li>
 <li>
 <h3><a id="b261efecfdd569f4b02d10a56b1ef9ed" class="anchor" href="#b261efecfdd569f4b02d10a56b1ef9ed">&#x631;&#x648;&#x634;&#x200C;&#x647;&#x627;&#x6CC; &#x67E;&#x6CC;&#x634;&#x646;&#x647;&#x627;&#x62F;&#x6CC; &#x628;&#x631;&#x627;&#x6CC; type checking &#x686;&#x6CC;&#x647;&#x61F;</a></h3>
@@ -2977,6 +3025,11 @@ app<span class="token punctuation">.</span><span class="token method function pr
 </ol>
 <p><strong><a class="backToTop" href="#b9fb04f02954a03e2876ec13c10bacbc-q">&#x641;&#x647;&#x631;&#x633;&#x62A;</a></strong></p>
 </li>
+</ol>
+<div class="show-in-print">
+  <br>
+</div>
+<ol start="63">
 <li>
 <h3><a id="873820ed98cd2be60e91e3627eb2ef45" class="anchor" href="#873820ed98cd2be60e91e3627eb2ef45">&#x627;&#x6AF;&#x647; &#x62A;&#x648;&#x6CC; constructor &#x628;&#x6CC;&#x627;&#x6CC;&#x6CC;&#x645; &#x648; setState &#x6A9;&#x646;&#x6CC;&#x645; &#x686;&#x6CC; &#x645;&#x6CC;&#x634;&#x647;&#x61F;</a></h3>
 <p>&#x648;&#x642;&#x62A;&#x6CC; &#x627;&#x632; <code>setState</code> &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x645;&#x6CC;&#x200C;&#x6A9;&#x646;&#x6CC;&#x645;&#x60C; &#x62C;&#x62F;&#x627; &#x627;&#x632; &#x627;&#x6CC;&#x646;&#x6A9;&#x647; &#x628;&#x647; &#x6CC;&#x647; &#x622;&#x628;&#x62C;&#x6A9;&#x62A; &#x627;&#x633;&#x62A;&#x6CC;&#x62A;&#x6CC; &#x627;&#x62E;&#x62A;&#x635;&#x627;&#x635; &#x62F;&#x627;&#x62F;&#x647; &#x645;&#x6CC;&#x634;&#x647; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x627;&#x648;&#x646; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A; &#x648; &#x647;&#x645;&#x647; &#x641;&#x631;&#x632;&#x646;&#x62F;&#x627;&#x6CC; &#x627;&#x648;&#x646; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A; &#x631;&#x648; &#x62F;&#x648;&#x628;&#x627;&#x631;&#x647; &#x631;&#x646;&#x62F;&#x631; &#x645;&#x6CC;&#x200C;&#x6A9;&#x646;&#x647;. &#x645;&#x645;&#x6A9;&#x646;&#x647; &#x627;&#x6CC;&#x646; &#x627;&#x631;&#x648;&#x631; &#x631;&#x648; &#x628;&#x6AF;&#x6CC;&#x631;&#x6CC;&#x646;: <em>&#x634;&#x645;&#x627; &#x641;&#x642;&#x637; &#x645;&#x6CC; &#x62A;&#x648;&#x646;&#x6CC;&#x62F; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A; mount &#x634;&#x62F;&#x647; &#x6CC;&#x627; &#x62F;&#x631; &#x62D;&#x627;&#x644; mount &#x631;&#x648; &#x628;&#x647; &#x631;&#x648;&#x632; &#x631;&#x633;&#x627;&#x646;&#x6CC; &#x6A9;&#x646;&#x6CC;&#x62F;.</em> &#x67E;&#x633; &#x628;&#x627;&#x6CC;&#x62F; &#x628;&#x62C;&#x627;&#x6CC; setState &#x627;&#x632; <code>this.state</code> &#x628;&#x631;&#x627;&#x6CC; &#x645;&#x642;&#x62F;&#x627;&#x631;&#x62F;&#x647;&#x6CC; state &#x62A;&#x648;&#x6CC; constructor &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x6A9;&#x646;&#x6CC;&#x645;.<br>
@@ -3254,14 +3307,13 @@ $ npm start
 </li>
 <li>
 <h3><a id="b9489aa2edb1893c70f9844f3db5d1fb" class="anchor" href="#b9489aa2edb1893c70f9844f3db5d1fb">&#x631;&#x648;&#x634; &#x62A;&#x648;&#x635;&#x6CC;&#x647; &#x634;&#x62F;&#x647; &#x628;&#x631;&#x627;&#x6CC; &#x646;&#x627;&#x645;&#x200C;&#x6AF;&#x630;&#x627;&#x631;&#x6CC; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A;&#x200C;&#x647;&#x627; &#x686;&#x6CC;&#x647;&#x61F;</a></h3>
-<p>&#x628;&#x631;&#x627;&#x6CC; &#x646;&#x627;&#x645; &#x6AF;&#x630;&#x627;&#x631;&#x6CC; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A;&#x200C;&#x647;&#x627; &#x62A;&#x648;&#x635;&#x6CC;&#x647; &#x645;&#x6CC;&#x634;&#x647; &#x6A9;&#x647; &#x627;&#x632; &#x627;&#x633;&#x645; &#x647;&#x646;&#x6AF;&#x627;&#x645; export &#x6AF;&#x631;&#x641;&#x62A;&#x646; &#x628;&#x647; &#x62C;&#x627;&#x6CC; <code>displayName</code> &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x6A9;&#x646;&#x6CC;&#x645;.</p>
-<p>&#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x627;&#x632; <code>displayName</code> &#x628;&#x631;&#x627;&#x6CC; &#x646;&#x627;&#x645; &#x6AF;&#x630;&#x627;&#x631;&#x6CC; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A;:</p>
+<p>&#x628;&#x631;&#x627;&#x6CC; &#x646;&#x627;&#x645; &#x6AF;&#x630;&#x627;&#x631;&#x6CC; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A;&#x200C;&#x647;&#x627; &#x62A;&#x648;&#x635;&#x6CC;&#x647; &#x645;&#x6CC;&#x634;&#x647; &#x6A9;&#x647; &#x627;&#x632; &#x646;&#x627;&#x645;&#x200C;&#x6AF;&#x630;&#x627;&#x631;&#x6CC; &#x647;&#x646;&#x6AF;&#x627;&#x645; export &#x6AF;&#x631;&#x641;&#x62A;&#x646; &#x628;&#x647; &#x62C;&#x627;&#x6CC; <code>displayName</code> &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x6A9;&#x646;&#x6CC;&#x645;. &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x627;&#x632; <code>displayName</code> &#x628;&#x631;&#x627;&#x6CC; &#x646;&#x627;&#x645; &#x6AF;&#x630;&#x627;&#x631;&#x6CC; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A;:</p>
 <span align="left" dir="ltr">
 <pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token keyword module">export</span> <span class="token keyword module">default</span> <span class="token maybe-class-name">React</span><span class="token punctuation">.</span><span class="token method function property-access">createClass</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
   displayName<span class="token operator">:</span> <span class="token string">&quot;TodoApp&quot;</span><span class="token punctuation">,</span>
   <span class="token comment">//...</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</pre> </span>
+</pre></span>
 <p>&#x631;&#x648;&#x634; <strong>&#x62A;&#x648;&#x635;&#x6CC;&#x647; &#x634;&#x62F;&#x647;</strong>:</p>
 <span align="left" dir="ltr">
 <pre data-role="codeBlock" data-info="jsx" class="language-jsx"><span class="token keyword">const</span> <span class="token function-variable function"><span class="token maybe-class-name">TodoApp</span></span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -3615,6 +3667,12 @@ state&#x200C;&#x647;&#x627; &#x62F;&#x631; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&
 </pre> </span>
 <p><strong><a class="backToTop" href="#cc6a212cf621fe32b1d06accf852702d-q">&#x641;&#x647;&#x631;&#x633;&#x62A;</a></strong></p>
 </li>
+</ol>
+<div class="show-in-print">
+  <br>
+  <br>
+</div>
+<ol start="96">
 <li>
 <h3><a id="2fc33627a09c649c6f3c76708a5d6d0a" class="anchor" href="#2fc33627a09c649c6f3c76708a5d6d0a">&#x62A;&#x641;&#x627;&#x648;&#x62A;&#x200C;&#x647;&#x627;&#x6CC; React &#x648; ReactDOM &#x686;&#x6CC;&#x647;&#x61F;</a></h3>
 <p><strong>&#x67E;&#x6A9;&#x6CC;&#x62C; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A;</strong> &#x634;&#x627;&#x645;&#x644; <code>React.createElement</code>&#x60C; <code>React.Component</code>&#x60C; <code>React.Children</code> &#x648; helper&#x647;&#x627;&#x6CC; &#x62F;&#x6CC;&#x6AF;&#x647; &#x6A9;&#x647; &#x645;&#x631;&#x628;&#x648;&#x637;&#x647; &#x628;&#x647; &#x6A9;&#x644;&#x627;&#x633; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A;&#x200C;&#x647;&#x627; &#x648; &#x627;&#x644;&#x645;&#x646;&#x62A;&#x200C;&#x647;&#x627; &#x647;&#x633;&#x62A;&#x634;. &#x645;&#x6CC;&#x200C;&#x62A;&#x648;&#x646;&#x6CC;&#x645; &#x627;&#x6CC;&#x646;&#x627; &#x631;&#x648; &#x628;&#x647; &#x639;&#x646;&#x648;&#x627;&#x646; isomorphic &#x6CC;&#x627; universal helpers &#x6A9;&#x647; &#x648;&#x627;&#x633;&#x647; &#x633;&#x627;&#x62E;&#x62A;&#x646; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A;&#x200C;&#x647;&#x627; &#x646;&#x6CC;&#x627;&#x632; &#x62F;&#x627;&#x631;&#x6CC;&#x645;, &#x62F;&#x631; &#x646;&#x638;&#x631; &#x628;&#x6AF;&#x6CC;&#x631;&#x6CC;&#x645;.<br>
@@ -3807,6 +3865,11 @@ componentDidUpdate(object prevProps, object prevState)
 <p>&#x641;&#x644;&#x633;&#x641;&#x647; &#x633;&#x627;&#x62E;&#x62A;&#x627;&#x631;&#x6CC; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x628;&#x647; &#x634;&#x6A9;&#x644;&#x6CC;&#x647; &#x6A9;&#x647; prop&#x647;&#x627; &#x628;&#x627;&#x6CC;&#x62F; <em>immutable</em> &#x628;&#x627;&#x634;&#x646; &#x648; &#x627;&#x632; &#x628;&#x627;&#x644;&#x627; &#x628;&#x647; &#x67E;&#x627;&#x6CC;&#x6CC;&#x646; &#x648; &#x628;&#x647; &#x635;&#x648;&#x631;&#x62A; &#x633;&#x644;&#x633;&#x647;&#x200C;&#x645;&#x631;&#x627;&#x62A;&#x628;&#x6CC; &#x645;&#x642;&#x62F;&#x627;&#x631; &#x628;&#x6AF;&#x6CC;&#x631;&#x646;&#x62F;. &#x628;&#x647; &#x627;&#x6CC;&#x646; &#x645;&#x639;&#x646;&#x6CC; &#x6A9;&#x647; &#x67E;&#x62F;&#x631; &#x647;&#x631; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A; &#x645;&#x6CC;&#x200C;&#x62A;&#x648;&#x646;&#x647; &#x647;&#x631; &#x645;&#x642;&#x62F;&#x627;&#x631;&#x6CC; &#x631;&#x648; &#x628;&#x647; &#x641;&#x631;&#x632;&#x646;&#x62F; &#x67E;&#x627;&#x633; &#x628;&#x62F;&#x647; &#x648; &#x641;&#x631;&#x632;&#x646;&#x62F; &#x62D;&#x642; &#x62F;&#x633;&#x62A;&#x6A9;&#x627;&#x631;&#x6CC; &#x627;&#x648;&#x646;&#x648; &#x646;&#x62F;&#x627;&#x631;&#x647;.</p>
 <p><strong><a class="backToTop" href="#ac5e8f5b48abac36afbfa9fc51cb03c7-q">&#x641;&#x647;&#x631;&#x633;&#x62A;</a></strong></p>
 </li>
+</ol>
+<div class="show-in-print">
+  <br>
+</div>
+<ol start="107">
 <li>
 <h3><a id="0268b959c1fa6c7d668d406fe8b261e2" class="anchor" href="#0268b959c1fa6c7d668d406fe8b261e2">&#x686;&#x637;&#x648;&#x631;&#x6CC; &#x645;&#x6CC;&#x200C;&#x62A;&#x648;&#x646;&#x6CC;&#x645; &#x645;&#x648;&#x642;&#x639; &#x644;&#x648;&#x62F; &#x635;&#x641;&#x62D;&#x647; &#x631;&#x648;&#x6CC; &#x6CC;&#x647; input &#x641;&#x648;&#x6A9;&#x648;&#x633; &#x6A9;&#x646;&#x6CC;&#x645;&#x61F;</a></h3>
 <p>&#x645;&#x6CC;&#x634;&#x647; &#x628;&#x627; &#x627;&#x6CC;&#x62C;&#x627;&#x62F; &#x6CC;&#x647; <em>ref</em> &#x628;&#x631;&#x627;&#x6CC; &#x627;&#x644;&#x645;&#x646;&#x62A; <code>input</code> &#x648; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x627;&#x632; &#x627;&#x648;&#x646; &#x62A;&#x648;&#x6CC; <code>componentDidMount</code> &#x6CC;&#x627; <code>useEffect</code> &#x627;&#x6CC;&#x646;&#x200C;&#x6A9;&#x627;&#x631; &#x631;&#x648; &#x6A9;&#x631;&#x62F;:</p>
@@ -3938,6 +4001,12 @@ componentDidUpdate(object prevProps, object prevState)
 <p>&#x645;&#x62B;&#x644;&#x627; &#x62A;&#x648;&#x6CC; &#x62A;&#x6A9;&#x647; &#x6A9;&#x62F; &#x641;&#x648;&#x642; &#x645;&#x627; &#x628;&#x631;&#x627;&#x6CC; polyfill &#x6A9;&#x631;&#x62F;&#x646; <code>Array.prototype.includes</code> &#x62F;&#x631;&#x62E;&#x648;&#x627;&#x633;&#x62A; &#x62F;&#x627;&#x62F;&#x6CC;&#x645;.</p>
 <p><strong><a class="backToTop" href="#58cd39bddfe2840af2c79031f69eb8e3-q">&#x641;&#x647;&#x631;&#x633;&#x62A;</a></strong></p>
 </li>
+</ol>
+<div class="show-in-print">
+  <br>
+  <br>
+</div>
+<ol start="112">
 <li>
 <h3><a id="e443bc4d25ddcd58b948a8ac368d05cd" class="anchor" href="#e443bc4d25ddcd58b948a8ac368d05cd">&#x62A;&#x648;&#x6CC; CRA &#x686;&#x637;&#x648;&#x631;&#x6CC; &#x627;&#x632; https &#x628;&#x647;&#x200C;&#x62C;&#x627;&#x6CC; http &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x6A9;&#x646;&#x6CC;&#x645;&#x61F;</a></h3>
 <p>&#x628;&#x631;&#x627;&#x6CC; &#x627;&#x6CC;&#x646;&#x200C;&#x6A9;&#x627;&#x631; &#x644;&#x627;&#x632;&#x645;&#x647; &#x6A9;&#x647; &#x6A9;&#x627;&#x646;&#x641;&#x6CC;&#x6AF; <code>HTTPS=true</code> &#x631;&#x648; &#x628;&#x631;&#x627;&#x6CC; env &#x62C;&#x627;&#x631;&#x6CC; &#x200C;&#x633;&#x62A; &#x6A9;&#x646;&#x6CC;&#x645;&#x60C; &#x628;&#x631;&#x627;&#x6CC; &#x627;&#x6CC;&#x646;&#x200C;&#x6A9;&#x627;&#x631; &#x62D;&#x62A;&#x6CC; &#x644;&#x627;&#x632;&#x645; &#x647;&#x645; &#x646;&#x6CC;&#x633;&#x62A; &#x641;&#x627;&#x6CC;&#x644; .env &#x628;&#x633;&#x627;&#x632;&#x6CC;&#x645; &#x648; &#x645;&#x6CC;&#x200C;&#x62A;&#x648;&#x646;&#x6CC;&#x645; &#x62A;&#x648;&#x6CC; &#x641;&#x627;&#x6CC;&#x644; <code>package.json</code> &#x628;&#x62E;&#x634; scripts &#x631;&#x648; &#x628;&#x647; &#x634;&#x6A9;&#x644; &#x67E;&#x627;&#x6CC;&#x6CC;&#x646; &#x62A;&#x63A;&#x6CC;&#x6CC;&#x631; &#x628;&#x62F;&#x6CC;&#x645;:</p>
@@ -4004,6 +4073,11 @@ componentDidUpdate(object prevProps, object prevState)
 </pre></span>
 <p><strong><a class="backToTop" href="#fe6d88ee21004f628398718c7197fddc-q">&#x641;&#x647;&#x631;&#x633;&#x62A;</a></strong></p>
 </li>
+</ol>
+<div class="show-in-print">
+  <br>
+</div>
+<ol start="116">
 <li>
 <h3><a id="a76f085ba208f583ec897cb3a173563d" class="anchor" href="#a76f085ba208f583ec897cb3a173563d">&#x628;&#x631;&#x627;&#x6CC; &#x627;&#x633;&#x62A;&#x627;&#x6CC;&#x644;&#x200C;&#x62F;&#x647;&#x6CC;&#x200C;&#x647;&#x627;&#x6CC; &#x62F;&#x631;&#x648;&#x646; &#x62E;&#x637;&#x6CC; &#x686;&#x637;&#x648;&#x631;&#x6CC; &#x628;&#x627;&#x6CC;&#x62F; &#x67E;&#x6CC;&#x634;&#x648;&#x646;&#x62F;&#x200C;&#x647;&#x627;&#x6CC; &#x645;&#x62E;&#x635;&#x648;&#x635; &#x645;&#x631;&#x648;&#x631;&#x6AF;&#x631;&#x647;&#x627; &#x631;&#x648; &#x627;&#x636;&#x627;&#x641;&#x647; &#x6A9;&#x631;&#x62F;&#x61F;</a></h3>
 <p>&#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x628;&#x647; &#x634;&#x6A9;&#x644; &#x627;&#x62A;&#x648;&#x645;&#x627;&#x62A;&#x6CC;&#x6A9; &#x67E;&#x6CC;&#x634;&#x648;&#x646;&#x62F;&#x200C;&#x647;&#x627;&#x6CC; &#x645;&#x62E;&#x635;&#x648;&#x635; &#x645;&#x631;&#x648;&#x631;&#x6AF;&#x631;&#x647;&#x627; &#x631;&#x648;&#x6CC; css &#x631;&#x648; &#x627;&#x639;&#x645;&#x627;&#x644; <strong>&#x646;&#x645;&#x6CC;&#x200C;&#x6A9;&#x646;&#x647;</strong>. &#x644;&#x627;&#x632;&#x645;&#x647; &#x6A9;&#x647; &#x62A;&#x63A;&#x6CC;&#x6CC;&#x631;&#x627;&#x62A; &#x631;&#x648; &#x628;&#x647; &#x634;&#x6A9;&#x644; &#x62F;&#x633;&#x62A;&#x6CC; &#x627;&#x636;&#x627;&#x641;&#x647; &#x6A9;&#x646;&#x6CC;&#x645;.</p>
@@ -4034,6 +4108,12 @@ componentDidUpdate(object prevProps, object prevState)
 <p>&#x628;&#x627; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x627;&#x632; &#x6A9;&#x644;&#x645;&#x647; &#x6A9;&#x644;&#x6CC;&#x62F;&#x6CC; export default &#x645;&#x6CC;&#x200C;&#x62A;&#x648;&#x646;&#x6CC;&#x645; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A; MyProfile(&#x6CC;&#x627; &#x647;&#x631; &#x645;&#x62A;&#x63A;&#x6CC;&#x631; &#x648; &#x6A9;&#x644;&#x627;&#x633; &#x62F;&#x6CC;&#x6AF;&#x647;&#x200C;&#x627;&#x6CC;) &#x631;&#x648; &#x628;&#x647; &#x639;&#x646;&#x648;&#x627;&#x646; &#x6CC;&#x647; &#x639;&#x636;&#x648; &#x627;&#x632; &#x645;&#x627;&#x698;&#x648;&#x644; &#x641;&#x639;&#x644;&#x6CC; &#x645;&#x639;&#x631;&#x641;&#x6CC; &#x6A9;&#x631;&#x62F; &#x648; &#x628;&#x639;&#x62F; &#x627;&#x632; &#x627;&#x6CC;&#x646;&#x60C; &#x628;&#x631;&#x627;&#x6CC; import &#x6A9;&#x631;&#x62F;&#x646; &#x627;&#x648;&#x646; &#x644;&#x632;&#x648;&#x645;&#x6CC; &#x628;&#x647; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x627;&#x632; &#x639;&#x646;&#x648;&#x627;&#x646; &#x627;&#x6CC;&#x646; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A; &#x646;&#x6CC;&#x633;&#x62A;.</p>
 <p><strong><a class="backToTop" href="#650f452e24fbf770f4c0a7902599b2db-q">&#x641;&#x647;&#x631;&#x633;&#x62A;</a></strong></p>
 </li>
+</ol>
+<div class="show-in-print">
+  <br>
+  <br>
+</div>
+<ol start="118">
 <li>
 <h3><a id="0d90c58a6f892b8ed0b30810fc931513" class="anchor" href="#0d90c58a6f892b8ed0b30810fc931513">&#x627;&#x633;&#x62A;&#x62B;&#x646;&#x627;&#x6CC;&#x6CC; &#x6A9;&#x647; &#x628;&#x631;&#x627;&#x6CC; &#x646;&#x627;&#x645;&#x200C;&#x6AF;&#x630;&#x627;&#x631;&#x6CC; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A; &#x627;&#x62C;&#x627;&#x632;&#x647; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x627;&#x632; &#x62D;&#x631;&#x641; &#x6A9;&#x648;&#x686;&#x6A9; &#x631;&#x648; &#x645;&#x6CC;&#x62F;&#x647; &#x686;&#x6CC;&#x647;&#x61F;</a></h3>
 <p>&#x647;&#x645;&#x647; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A;&#x200C;&#x647;&#x627;&#x6CC; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x644;&#x627;&#x632;&#x645;&#x647; &#x6A9;&#x647; &#x628;&#x627; &#x62D;&#x631;&#x641; &#x628;&#x632;&#x631;&#x6AF; &#x634;&#x631;&#x648;&#x639; &#x628;&#x634;&#x646;&#x60C; &#x648;&#x644;&#x6CC; &#x62A;&#x648;&#x6CC; &#x627;&#x6CC;&#x646; &#x645;&#x648;&#x631;&#x62F; &#x647;&#x645; &#x6CC;&#x647; &#x633;&#x631;&#x6CC; &#x627;&#x633;&#x62A;&#x62B;&#x646;&#x627;&#x647;&#x627; &#x648;&#x62C;&#x648;&#x62F; &#x62F;&#x627;&#x631;&#x647;. &#x62A;&#x6AF;&#x200C;&#x647;&#x627;&#x6CC;&#x6CC; &#x6A9;&#x647; &#x628;&#x627; property &#x648; &#x639;&#x645;&#x644;&#x6AF;&#x631; dot &#x6A9;&#x627;&#x631; &#x645;&#x6CC;&#x200C;&#x6A9;&#x646;&#x646; &#x631;&#x648; &#x645;&#x6CC;&#x634;&#x647; &#x628;&#x647; &#x639;&#x646;&#x648;&#x627;&#x646; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A;&#x200C;&#x647;&#x627;&#x6CC;&#x6CC; &#x628;&#x627; &#x62D;&#x631;&#x641; &#x6A9;&#x648;&#x686;&#x6A9; &#x62A;&#x644;&#x642;&#x6CC; &#x6A9;&#x631;&#x62F;. &#x628;&#x631;&#x627;&#x6CC; &#x645;&#x62B;&#x627;&#x644; &#x627;&#x6CC;&#x646; &#x62A;&#x6AF; &#x645;&#x6CC;&#x200C;&#x62A;&#x648;&#x646;&#x647; syntax &#x645;&#x639;&#x62A;&#x628;&#x631;&#x6CC; &#x628;&#x631;&#x627;&#x6CC; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x628;&#x627;&#x634;&#x647; &#x6A9;&#x647; &#x628;&#x627; &#x62D;&#x631;&#x648;&#x641; &#x6A9;&#x648;&#x686;&#x6CC;&#x6A9; &#x634;&#x631;&#x648;&#x639; &#x645;&#x6CC;&#x634;&#x647;:</p>
@@ -4062,6 +4142,11 @@ componentDidUpdate(object prevProps, object prevState)
 <p>&#x641;&#x6CC;&#x644;&#x62F;&#x647;&#x627;&#x6CC; &#x627;&#x633;&#x62A;&#x627;&#x62A;&#x6CC;&#x6A9; &#x628;&#x62E;&#x634;&#x6CC; &#x627;&#x632; &#x641;&#x6CC;&#x644;&#x62F;&#x647;&#x627;&#x6CC; &#x6A9;&#x644;&#x627;&#x633;(class properties) &#x647;&#x633;&#x62A;&#x646; &#x6A9;&#x647; &#x62A;&#x648;&#x6CC; &#x67E;&#x631;&#x648;&#x67E;&#x648;&#x632;&#x627;&#x644; stage 3 &#x645;&#x639;&#x631;&#x641;&#x6CC; &#x634;&#x62F;&#x646;.</p>
 <p><strong><a class="backToTop" href="#b8413321f2aca25d9f277040e3958899-q">&#x641;&#x647;&#x631;&#x633;&#x62A;</a></strong></p>
 </li>
+</ol>
+<div class="show-in-print">
+  <br>
+</div>
+<ol start="121">
 <li>
 <h3><a id="9b5e9ded00ff822f6ef0493ec7878721" class="anchor" href="#9b5e9ded00ff822f6ef0493ec7878721">&#x686;&#x637;&#x648;&#x631;&#x6CC; &#x62A;&#x648;&#x6CC; &#x628;&#x631;&#x646;&#x627;&#x645;&#x647; event &#x6A9;&#x644;&#x6CC;&#x6A9; &#x634;&#x62F;&#x646; &#x631;&#x648; trigger &#x6A9;&#x646;&#x6CC;&#x645;&#x61F;</a></h3>
 <p>&#x645;&#x6CC;&#x200C;&#x62A;&#x648;&#x646;&#x6CC;&#x645; &#x627;&#x632; ref &#x628;&#x631;&#x627;&#x6CC; &#x628;&#x62F;&#x633;&#x62A; &#x622;&#x648;&#x631;&#x62F;&#x646; &#x631;&#x641;&#x631;&#x646;&#x633; <code>HTMLInputElement</code> &#x645;&#x648;&#x631;&#x62F; &#x646;&#x638;&#x631; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x6A9;&#x646;&#x6CC;&#x645; &#x648; object &#x628;&#x62F;&#x633;&#x62A; &#x627;&#x648;&#x645;&#x62F;&#x647; &#x631;&#x648; &#x62A;&#x648;&#x6CC; &#x6CC;&#x647; &#x645;&#x62A;&#x63A;&#x6CC;&#x631; &#x6CC;&#x627; property &#x646;&#x6AF;&#x647;&#x62F;&#x627;&#x631;&#x6CC; &#x6A9;&#x646;&#x6CC;&#x645;&#x60C; &#x628;&#x639;&#x62F;&#x634; &#x627;&#x632; &#x627;&#x648;&#x646; &#x631;&#x641;&#x631;&#x646;&#x633; &#x645;&#x6CC;&#x200C;&#x62A;&#x648;&#x646;&#x6CC;&#x645; &#x628;&#x631;&#x627;&#x6CC; &#x627;&#x639;&#x645;&#x627;&#x644; &#x631;&#x62E;&#x62F;&#x627;&#x62F; &#x6A9;&#x644;&#x6CC;&#x6A9; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x6A9;&#x646;&#x6CC;&#x645;<br>
@@ -4139,6 +4224,12 @@ componentDidUpdate(object prevProps, object prevState)
 </code></pre></span>
 <p><strong><a class="backToTop" href="#89f7eb916b91ac2748a5c32fbba39754-q">&#x641;&#x647;&#x631;&#x633;&#x62A;</a></strong></p>
 </li>
+</ol>
+<div class="show-in-print">
+  <br>
+  <br>
+</div>
+<ol start="124">
 <li>
 <h3><a id="58837e2e3b62b67678b7d09fa5e4931b" class="anchor" href="#58837e2e3b62b67678b7d09fa5e4931b">&#x67E;&#x6A9;&#x6CC;&#x62C;&#x200C;&#x647;&#x627;&#x6CC; &#x645;&#x634;&#x647;&#x648;&#x631; &#x628;&#x631;&#x627;&#x6CC; &#x627;&#x646;&#x6CC;&#x645;&#x6CC;&#x634;&#x646; &#x6A9;&#x62F;&#x648;&#x645;&#x627; &#x647;&#x633;&#x62A;&#x646;&#x61F;</a></h3>
 <p>React Transition Group&#x60C; React Spring &#x648; React Motion &#x67E;&#x6A9;&#x6CC;&#x62C;&#x200C;&#x647;&#x627;&#x6CC; &#x645;&#x634;&#x647;&#x648;&#x631; &#x628;&#x631;&#x627;&#x6CC; &#x627;&#x646;&#x6CC;&#x645;&#x6CC;&#x634;&#x646; &#x628;&#x631;&#x627;&#x6CC; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x647;&#x633;&#x62A;&#x646;.</p>
@@ -4250,6 +4341,12 @@ componentDidUpdate(object prevProps, object prevState)
 </pre></span>
 <p><strong><a class="backToTop" href="#5ea1228b75eec9894e66174ddf3d8600-q">&#x641;&#x647;&#x631;&#x633;&#x62A;</a></strong></p>
 </li>
+</ol>
+<div class="show-in-print">
+  <br>
+  <br>
+</div>
+<ol start="128">
 <li>
 <h3><a id="3872f19b9bcd0266412d36fa3732b6e4" class="anchor" href="#3872f19b9bcd0266412d36fa3732b6e4">render props &#x686;&#x6CC;&#x647;&#x61F;</a></h3>
 <p><strong>Render Props</strong> &#x6CC;&#x647; &#x62A;&#x6A9;&#x646;&#x6CC;&#x6A9; &#x633;&#x627;&#x62F;&#x647; &#x628;&#x631;&#x627;&#x6CC; &#x628;&#x647; &#x627;&#x634;&#x62A;&#x631;&#x627;&#x6A9; &#x6AF;&#x630;&#x627;&#x631;&#x6CC; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A; &#x628;&#x6CC;&#x646; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A;&#x200C;&#x647;&#x627;&#x6CC; &#x62F;&#x6CC;&#x6AF;&#x647;&#x200C;&#x640;&#x633;&#x62A; &#x6A9;&#x647; &#x628;&#x627; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x627;&#x632; &#x6CC;&#x647; prop &#x6A9;&#x647; &#x6CC;&#x647; &#x62A;&#x627;&#x628;&#x639; &#x6CC;&#x627; &#x6CC;&#x647; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A; &#x631;&#x648; &#x628;&#x647;&#x634; &#x62F;&#x627;&#x62F;&#x6CC;&#x645; &#x627;&#x646;&#x62C;&#x627;&#x645; &#x645;&#x6CC;&#x634;&#x647;. &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A; &#x632;&#x6CC;&#x631; &#x627;&#x632; &#x647;&#x645;&#x6CC;&#x646; &#x631;&#x648;&#x634; &#x628;&#x631;&#x627;&#x6CC; &#x67E;&#x627;&#x633; &#x62F;&#x627;&#x62F;&#x646; &#x6CC;&#x647; React element &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x645;&#x6CC;&#x200C;&#x6A9;&#x646;&#x647; &#x648; &#x62A;&#x648;&#x6CC; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A; &#x67E;&#x627;&#x6CC;&#x6CC;&#x646; &#x627;&#x6CC;&#x646; prop &#x631;&#x648; &#x6CC;&#x647; &#x634;&#x6A9;&#x644; &#x6CC;&#x647; &#x62A;&#x627;&#x628;&#x639; &#x641;&#x631;&#x627;&#x62E;&#x648;&#x627;&#x646;&#x6CC; &#x645;&#x6CC;&#x200C;&#x6A9;&#x646;&#x6CC;&#x645; &#x648; &#x686;&#x648;&#x646; &#x6CC;&#x647; &#x62A;&#x627;&#x628;&#x639; &#x647;&#x633;&#x62A;&#x60C; &#x645;&#x6CC;&#x62A;&#x648;&#x646;&#x6CC;&#x645; &#x628;&#x647;&#x634; &#x647;&#x631; &#x645;&#x642;&#x62F;&#x627;&#x631;&#x6CC; &#x6A9;&#x647; &#x645;&#x6CC;&#x62E;&#x648;&#x627;&#x6CC;&#x6CC;&#x645; &#x628;&#x6CC;&#x627;&#x631;&#x6CC;&#x645; &#x627;&#x6CC;&#x646; &#x633;&#x645;&#x62A; &#x631;&#x648; &#x67E;&#x627;&#x633; &#x628;&#x62F;&#x6CC;&#x645;.</p>
@@ -4259,8 +4356,11 @@ componentDidUpdate(object prevProps, object prevState)
 <p>&#x6A9;&#x62A;&#x627;&#x628;&#x62E;&#x648;&#x646;&#x647;&#x200C;&#x647;&#x627;&#x6CC;&#x6CC; &#x645;&#x62B;&#x644; React Router &#x648; DownShift &#x627;&#x632; &#x627;&#x6CC;&#x646; &#x67E;&#x62A;&#x631;&#x646; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x645;&#x6CC;&#x200C;&#x6A9;&#x646;&#x646;.</p>
 </li>
 </ol>
+<br>
+<br>
 <h2 class="mume-header" id="react-router">React Router</h2>
 
+<br>
 <ol start="129">
 <li>
 <h3><a id="a50df355f374e96f137994d8107e654d" class="anchor" href="#a50df355f374e96f137994d8107e654d">React Router &#x686;&#x6CC;&#x647;&#x61F;</a></h3>
@@ -4459,6 +4559,11 @@ componentDidUpdate(object prevProps, object prevState)
 </pre></span>
 <p><strong><a class="backToTop" href="#c9fee4c64cac11728060f1960ad306b8-q">&#x641;&#x647;&#x631;&#x633;&#x62A;</a></strong></p>
 </li>
+</ol>
+<div class="show-in-print">
+  <br>
+</div>
+<ol start="138">
 <li>
 <h3><a id="07c43bb052493ff13621ea7e4a9a8332" class="anchor" href="#07c43bb052493ff13621ea7e4a9a8332">&#x62A;&#x648;&#x6CC; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x631;&#x648;&#x62A;&#x631; &#x646;&#x633;&#x62E;&#x647;&#x6F4; &#x686;&#x637;&#x648;&#x631;&#x6CC; &#x645;&#x6CC;&#x634;&#x647; history &#x631;&#x648; &#x6AF;&#x631;&#x641;&#x62A;&#x61F;</a></h3>
 <ol>
@@ -4518,8 +4623,11 @@ history<span class="token punctuation">.</span><span class="token method functio
 </pre></span>
 </li>
 </ol>
+<br>
+<br>
 <h2 class="mume-header" id="%DA%86%D9%86%D8%AF%D8%B2%D8%A8%D8%A7%D9%86%DA%AF%DB%8C-%D8%B1%DB%8C%D8%A7%DA%A9%D8%AA">&#x686;&#x646;&#x62F;&#x632;&#x628;&#x627;&#x646;&#x6AF;&#x6CC; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A;</h2>
 
+<br>
 <ol start="140">
 <li>
 <h3><a id="ffa07348bdaf6353c17f9f2a446c7a9a" class="anchor" href="#ffa07348bdaf6353c17f9f2a446c7a9a">React-Intl &#x686;&#x6CC;&#x647;&#x61F;</a></h3>
@@ -4622,8 +4730,12 @@ history<span class="token punctuation">.</span><span class="token method functio
 </pre></span>
 </li>
 </ol>
+<br>
+<br>
+<br>
 <h2 class="mume-header" id="%D8%AA%D8%B3%D8%AA-%D8%B1%DB%8C%D8%A7%DA%A9%D8%AA">&#x62A;&#x633;&#x62A; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A;</h2>
 
+<br>
 <ol start="146">
 <li>
 <h3><a id="7240f3d883ac38c11966b43816dfb2f8" class="anchor" href="#7240f3d883ac38c11966b43816dfb2f8">&#x62A;&#x648;&#x6CC; &#x62A;&#x633;&#x62A; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; Shallow Renderer &#x686;&#x6CC;&#x647;&#x61F;</a></h3>
@@ -4732,13 +4844,17 @@ PASS./sum.test.js
 </code></pre></span>
 </li>
 </ol>
+<br>
+<br>
+<br>
 <h2 class="mume-header" id="react-redux">React Redux</h2>
 
+<br>
 <ol start="152">
 <li>
 <h3><a id="0e07e2bf06433bf065ac86c3b73afed8" class="anchor" href="#0e07e2bf06433bf065ac86c3b73afed8">Flux &#x686;&#x6CC;&#x647;&#x61F;</a></h3>
 <p><em>Flux</em> &#x6CC;&#x647; &#x627;&#x644;&#x6AF;&#x648;&#x6CC; &#x637;&#x631;&#x627;&#x62D;&#x6CC; &#x628;&#x631;&#x646;&#x627;&#x645;&#x647;&#x200C;&#x640;&#x633;&#x62A; &#x6A9;&#x647; &#x628;&#x647; &#x639;&#x646;&#x648;&#x627;&#x646; &#x62C;&#x627;&#x6CC;&#x6AF;&#x632;&#x6CC;&#x646;&#x6CC; &#x628;&#x631;&#x627;&#x6CC; &#x627;&#x6A9;&#x62B;&#x631; &#x67E;&#x62A;&#x631;&#x646;&#x200C;&#x647;&#x627;&#x6CC; MVC &#x633;&#x646;&#x62A;&#x6CC; &#x628;&#x647; &#x6A9;&#x627;&#x631; &#x645;&#x6CC;&#x631;&#x647;. &#x62F;&#x631; &#x62D;&#x642;&#x6CC;&#x642;&#x62A; &#x6CC;&#x647; &#x6A9;&#x62A;&#x627;&#x628;&#x62E;&#x648;&#x646;&#x647; &#x6CC;&#x627; &#x641;&#x631;&#x6CC;&#x645;&#x200C;&#x648;&#x631;&#x6A9; &#x646;&#x6CC;&#x633;&#x62A; &#x648; &#x6CC;&#x647; &#x645;&#x639;&#x645;&#x627;&#x631;&#x6CC; &#x628;&#x631;&#x627;&#x6CC; &#x62A;&#x6A9;&#x645;&#x6CC;&#x644; &#x6A9;&#x627;&#x631;&#x6A9;&#x631;&#x62F; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x628;&#x627; &#x645;&#x641;&#x647;&#x648;&#x645; &#x62C;&#x631;&#x6CC;&#x627;&#x646; &#x62F;&#x627;&#x62F;&#x647; &#x6CC;&#x6A9; &#x637;&#x631;&#x641;&#x647;(Unidirectional Data Flow) &#x628;&#x647; &#x6A9;&#x627;&#x631; &#x645;&#x6CC;&#x631;&#x647;. &#x641;&#x6CC;&#x633;&#x200C;&#x628;&#x648;&#x6A9; &#x627;&#x632; &#x627;&#x6CC;&#x646; &#x67E;&#x62A;&#x631;&#x646; &#x628;&#x647; &#x634;&#x6A9;&#x644; &#x62F;&#x627;&#x62E;&#x644;&#x6CC; &#x628;&#x631;&#x627;&#x6CC; &#x62A;&#x648;&#x633;&#x639;&#x647; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x628;&#x647;&#x631;&#x647; &#x645;&#x6CC;&#x200C;&#x6AF;&#x6CC;&#x631;&#x647;.</p>
-<p>&#x62C;&#x631;&#x6CC;&#x627;&#x646; &#x6A9;&#x627;&#x631; &#x628;&#x6CC;&#x646; dispatcher&#x60C; store&#x200C;&#x647;&#x627; &#x648; view&#x647;&#x627;&#x6CC; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A;&#x200C;&#x647;&#x627; &#x628;&#x627; &#x648;&#x631;&#x648;&#x62F;&#x6CC; &#x648; &#x62E;&#x631;&#x648;&#x62C;&#x6CC; &#x645;&#x634;&#x62E;&#x635; &#x628;&#x647; &#x634;&#x6A9;&#x644; &#x632;&#x6CC;&#x631; &#x62E;&#x648;&#x627;&#x647;&#x62F; &#x628;&#x648;&#x62F;:</p>
+<p>&#x62C;&#x631;&#x6CC;&#x627;&#x646; &#x6A9;&#x627;&#x631; &#x628;&#x6CC;&#x646; dispatcher&#x60C; store&#x200C;&#x647;&#x627; &#x648; view&#x647;&#x627;&#x6CC; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A;&#x200C;&#x647;&#x627; &#x628;&#x627; &#x648;&#x631;&#x648;&#x62F;&#x6CC; &#x648; &#x62E;&#x631;&#x648;&#x62C;&#x6CC; &#x645;&#x634;&#x62E;&#x635; &#x628;&#x647; &#x634;&#x6A9;&#x644; &#x635;&#x641;&#x62D;&#x647; &#x628;&#x639;&#x62F; &#x62E;&#x648;&#x627;&#x647;&#x62F; &#x628;&#x648;&#x62F;:</p>
 <p><img src="images/flux.png" alt="flux"></p>
 <p><strong><a class="backToTop" href="#2a61e834d581b5eaadbfc51811dccb20-q">&#x641;&#x647;&#x631;&#x633;&#x62A;</a></strong></p>
 </li>
@@ -4757,6 +4873,11 @@ PASS./sum.test.js
 </ol>
 <p><strong><a class="backToTop" href="#152d914e5abc85f1d60e7a54b4d85c77-q">&#x641;&#x647;&#x631;&#x633;&#x62A;</a></strong></p>
 </li>
+</ol>
+<div class="show-in-print">
+  <br>
+</div>
+<ol start="155">
 <li>
 <h3><a id="59e6534999a2674810ab7b4c279371a2" class="anchor" href="#59e6534999a2674810ab7b4c279371a2">&#x6A9;&#x627;&#x633;&#x62A;&#x6CC;&#x200C;&#x647;&#x627;&#x6CC; redux &#x646;&#x633;&#x628;&#x62A; &#x628;&#x647; flux &#x6A9;&#x62F;&#x648;&#x645;&#x627; &#x647;&#x633;&#x62A;&#x646;&#x61F;</a></h3>
 <p>&#x628;&#x62C;&#x627;&#x6CC; &#x6AF;&#x641;&#x62A;&#x646; &#x6A9;&#x627;&#x633;&#x62A;&#x6CC;&#x200C;&#x647;&#x627; &#x628;&#x6CC;&#x627;&#x6CC;&#x6CC;&#x646; &#x645;&#x648;&#x627;&#x631;&#x62F;&#x6CC; &#x6A9;&#x647; &#x645;&#x6CC;&#x200C;&#x62F;&#x648;&#x646;&#x6CC;&#x645; &#x645;&#x648;&#x642;&#x639; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x627;&#x632; Redux &#x628;&#x62C;&#x627;&#x6CC; Flux &#x62F;&#x627;&#x631;&#x6CC;&#x645; &#x631;&#x648; &#x628;&#x6AF;&#x6CC;&#x645;:</p>
@@ -5160,6 +5281,11 @@ PASS./sum.test.js
 </code></pre></span>
 <p><strong><a class="backToTop" href="#f681b41ef94a9d388d6ac9d49b40afa3-q">&#x641;&#x647;&#x631;&#x633;&#x62A;</a></strong></p>
 </li>
+</ol>
+<div class="show-in-print">
+  <br>
+</div>
+<ol start="176">
 <li>
 <h3><a id="95499d4e65dcbe4812e4649764bb08c9" class="anchor" href="#95499d4e65dcbe4812e4649764bb08c9">&#x645;&#x62F;&#x644; &#x630;&#x647;&#x646;&#x6CC; redux-saga &#x686;&#x637;&#x648;&#x631;&#x6CC;&#x647;&#x61F;</a></h3>
 <p>Saga &#x645;&#x62B;&#x644; &#x6CC;&#x647; thread &#x62C;&#x62F;&#x627;&#x6AF;&#x627;&#x646;&#x647; &#x628;&#x631;&#x627;&#x6CC; &#x628;&#x631;&#x646;&#x627;&#x645;&#x647; &#x639;&#x645;&#x644; &#x645;&#x6CC;&#x200C;&#x6A9;&#x646;&#x647; &#x648; &#x641;&#x642;&#x637; &#x628;&#x631;&#x627;&#x6CC; &#x645;&#x62F;&#x6CC;&#x631;&#x6CC;&#x62A; &#x633;&#x627;&#x6CC;&#x62F; &#x627;&#x641;&#x6A9;&#x62A; &#x6A9;&#x627;&#x631;&#x627;&#x6CC;&#x6CC; &#x62F;&#x627;&#x631;&#x647;. <code>redux-saga</code> &#x6CC;&#x647; &#x645;&#x6CC;&#x627;&#x646;&#x200C;&#x627;&#x641;&#x632;&#x627;&#x631;(middlewaer) &#x628;&#x631;&#x627;&#x6CC; &#x631;&#x6CC;&#x62F;&#x627;&#x6A9;&#x633;&#x200C;&#x640;&#x647;&#x60C; &#x6A9;&#x647; &#x628;&#x647; &#x645;&#x639;&#x646;&#x6CC; &#x627;&#x6CC;&#x646;&#x647; &#x6A9;&#x647; &#x645;&#x6CC;&#x200C;&#x62A;&#x648;&#x646;&#x647; &#x628;&#x647; &#x635;&#x648;&#x631;&#x62A; &#x627;&#x62A;&#x648;&#x645;&#x627;&#x62A;&#x6CC;&#x6A9; &#x62A;&#x648;&#x633;&#x637; action&#x647;&#x627;&#x6CC; &#x631;&#x6CC;&#x62F;&#x627;&#x6A9;&#x633; &#x634;&#x631;&#x648;&#x639; &#x628;&#x634;&#x647;&#x60C; &#x645;&#x62A;&#x648;&#x642;&#x641; &#x628;&#x634;&#x647; &#x648; &#x6CC;&#x627; &#x6A9;&#x627;&#x631; &#x62E;&#x627;&#x635;&#x6CC; &#x627;&#x646;&#x62C;&#x627;&#x645; &#x628;&#x62F;&#x647;. &#x627;&#x6CC;&#x646; &#x645;&#x6CC;&#x627;&#x646;&#x200C;&#x627;&#x641;&#x632;&#x627;&#x631; &#x628;&#x647; &#x6A9;&#x644; store &#x631;&#x6CC;&#x62F;&#x627;&#x6A9;&#x633; &#x648; action&#x647;&#x627;&#x6CC;&#x6CC; &#x6A9;&#x647; &#x6A9;&#x627;&#x631; &#x645;&#x6CC;&#x200C;&#x6A9;&#x646;&#x646; &#x62F;&#x633;&#x62A;&#x631;&#x633;&#x6CC; &#x62F;&#x627;&#x631;&#x647; &#x648; &#x645;&#x6CC;&#x200C;&#x62A;&#x648;&#x646;&#x647; &#x647;&#x631; action &#x62F;&#x6CC;&#x6AF;&#x647;&#x200C;&#x627;&#x6CC; &#x631;&#x648; dispatch &#x6A9;&#x646;&#x647;.</p>
@@ -5210,6 +5336,12 @@ PASS./sum.test.js
 </ol>
 <p><strong><a class="backToTop" href="#2e2421fc2ba91e8339ca2b38f7a58344-q">&#x641;&#x647;&#x631;&#x633;&#x62A;</a></strong></p>
 </li>
+</ol>
+<div class="show-in-print">
+  <br>
+  <br>
+</div>
+<ol start="182">
 <li>
 <h3><a id="272ea16cdc4957b8a43e9eb666adc4de" class="anchor" href="#272ea16cdc4957b8a43e9eb666adc4de">&#x633;&#x644;&#x6A9;&#x62A;&#x648;&#x631;&#x647;&#x627;&#x6CC; &#x631;&#x6CC;&#x62F;&#x627;&#x6A9;&#x633; &#x686;&#x6CC; &#x647;&#x633;&#x62A;&#x646; &#x648; &#x686;&#x631;&#x627; &#x628;&#x627;&#x6CC;&#x62F; &#x627;&#x632;&#x634;&#x648;&#x646; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x6A9;&#x646;&#x6CC;&#x645;&#x61F;</a></h3>
 <p>Selector&#x647;&#x627; &#x6CC;&#x647; &#x633;&#x631;&#x6CC; &#x62A;&#x627;&#x628;&#x639; &#x647;&#x633;&#x62A;&#x646; &#x6A9;&#x647; state &#x631;&#x6CC;&#x62F;&#x627;&#x6A9;&#x633; &#x631;&#x648; &#x628;&#x647; &#x639;&#x646;&#x648;&#x627;&#x646; &#x6CC;&#x647; &#x67E;&#x627;&#x631;&#x627;&#x645;&#x62A;&#x631; &#x62F;&#x631;&#x6CC;&#x627;&#x641;&#x62A; &#x645;&#x6CC;&#x200C;&#x6A9;&#x646;&#x647; &#x648; &#x6CC;&#x647; &#x628;&#x62E;&#x634; &#x627;&#x632; &#x627;&#x648;&#x646; state &#x6A9;&#x647; &#x645;&#x6CC;&#x62E;&#x648;&#x627;&#x6CC;&#x6CC;&#x645; &#x631;&#x648; &#x628;&#x631;&#x6AF;&#x634;&#x62A; &#x645;&#x6CC;&#x62F;&#x647;.</p>
@@ -5268,8 +5400,12 @@ PASS./sum.test.js
 <p>Relay &#x648; Redux &#x62A;&#x648;&#x6CC; &#x627;&#x6CC;&#x646; &#x645;&#x648;&#x631;&#x62F; &#x6A9;&#x647; &#x62F;&#x648;&#x62A;&#x627;&#x634;&#x648;&#x646;&#x645; &#x627;&#x632; &#x6CC;&#x647; store &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x645;&#x6CC;&#x200C;&#x6A9;&#x646;&#x646; &#x634;&#x628;&#x6CC;&#x647; &#x628;&#x647;&#x645; &#x647;&#x633;&#x62A;&#x646;. &#x62A;&#x641;&#x627;&#x648;&#x62A; &#x627;&#x635;&#x644;&#x6CC; &#x627;&#x6CC;&#x646; &#x62F;&#x648; &#x627;&#x6CC;&#x646;&#x647; &#x6A9;&#x647; relay &#x641;&#x642;&#x637; state&#x647;&#x627;&#x6CC;&#x6CC; &#x631;&#x648; &#x645;&#x62F;&#x6CC;&#x631;&#x6CC;&#x62A; &#x645;&#x6CC;&#x200C;&#x6A9;&#x646;&#x647; &#x6A9;&#x647; &#x627;&#x632; &#x633;&#x631;&#x648;&#x631; &#x62A;&#x627;&#x62B;&#x6CC;&#x631; &#x6AF;&#x631;&#x641;&#x62A;&#x646; &#x648; &#x647;&#x645;&#x647; &#x62F;&#x633;&#x62A;&#x631;&#x633;&#x6CC;&#x200C;&#x647;&#x627;&#x6CC;&#x6CC; &#x6A9;&#x647; &#x628;&#x647; state &#x645;&#x631;&#x628;&#x648;&#x637;&#x647; &#x631;&#x648; &#x628;&#x627; &#x6A9;&#x648;&#x626;&#x631;&#x6CC;&#x200C;&#x647;&#x627;&#x6CC; GraphQL(&#x628;&#x631;&#x627;&#x6CC; &#x62E;&#x648;&#x646;&#x62F;&#x646; &#x62F;&#x627;&#x62F;&#x647;&#x200C;&#x647;&#x627;) &#x648; mutation&#x647;&#x627; (&#x628;&#x631;&#x627;&#x6CC; &#x62A;&#x63A;&#x6CC;&#x6CC;&#x631;&#x627;&#x62A; &#x62F;&#x627;&#x62F;&#x647;) &#x627;&#x646;&#x62C;&#x627;&#x645; &#x645;&#x6CC;&#x62F;&#x647;. Relay &#x62F;&#x627;&#x62F;&#x647;&#x200C;&#x647;&#x627; &#x628;&#x631;&#x627;&#x6CC; &#x634;&#x645;&#x627; &#x631;&#x648; cache &#x645;&#x6CC;&#x200C;&#x6A9;&#x646;&#x647; &#x648; &#x6AF;&#x631;&#x641;&#x62A;&#x646; &#x62F;&#x627;&#x62F;&#x647; &#x627;&#x632; &#x633;&#x631;&#x648;&#x631; &#x631;&#x648; &#x628;&#x631;&#x627;&#x6CC; &#x634;&#x645;&#x627; &#x628;&#x647;&#x6CC;&#x646;&#x647; &#x645;&#x6CC;&#x200C;&#x6A9;&#x646;&#x647;. &#x686;&#x648;&#x646; &#x641;&#x642;&#x637; &#x62A;&#x63A;&#x6CC;&#x6CC;&#x631;&#x627;&#x62A; &#x631;&#x648; &#x62F;&#x631;&#x6CC;&#x627;&#x641;&#x62A; &#x645;&#x6CC;&#x6A9;&#x631;&#x62F; &#x648; &#x646;&#x647; &#x686;&#x6CC;&#x632; &#x62F;&#x6CC;&#x6AF;&#x647;&#x200C;&#x627;&#x6CC;.</p>
 </li>
 </ol>
+<br>
+<br>
+<br>
 <h2 class="mume-header" id="react-native">React Native</h2>
 
+<br>
 <ol start="188">
 <li>
 <h3><a id="a4bf7ecc99842f587db989085fb46a24" class="anchor" href="#a4bf7ecc99842f587db989085fb46a24">&#x62A;&#x641;&#x627;&#x648;&#x62A;&#x200C;&#x647;&#x627;&#x6CC; React Native &#x648; React &#x6A9;&#x62F;&#x648;&#x645;&#x627; &#x647;&#x633;&#x62A;&#x646;&#x61F;</a></h3>
@@ -5309,8 +5445,10 @@ $ react-native log-android
 </ol>
 </li>
 </ol>
-<h2 class="mume-header" id="%DA%A9%D8%AA%D8%A7%D8%A8%D8%AE%D9%88%D9%86%D9%87%D9%87%D8%A7%DB%8C-%D9%BE%D8%B4%D8%AA%DB%8C%D8%A8%D8%A7%D9%86%DB%8C-%D8%B4%D8%AF%D9%87-%D8%B1%DB%8C%D8%A7%DA%A9%D8%AA%DB%8C-%D9%88-integration%D9%87%D8%A7%D8%B4">&#x6A9;&#x62A;&#x627;&#x628;&#x62E;&#x648;&#x646;&#x647;&#x200C;&#x647;&#x627;&#x6CC; &#x67E;&#x634;&#x62A;&#x6CC;&#x628;&#x627;&#x646;&#x6CC; &#x634;&#x62F;&#x647; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A;&#x6CC; &#x648; Integration&#x647;&#x627;&#x634;</h2>
+<br>
+<h2 class="mume-header" id="%DA%A9%D8%AA%D8%A7%D8%A8%D8%AE%D9%88%D9%86%D9%87%D9%87%D8%A7%DB%8C-%D8%B1%DB%8C%D8%A7%DA%A9%D8%AA-%D9%88-integration%D9%87%D8%A7%D8%B4%D9%88%D9%86">&#x6A9;&#x62A;&#x627;&#x628;&#x62E;&#x648;&#x646;&#x647;&#x200C;&#x647;&#x627;&#x6CC; &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x648; Integration&#x647;&#x627;&#x634;&#x648;&#x646;</h2>
 
+<br>
 <ol start="192">
 <li>
 <h3><a id="a4f931b01514a6603ac65347068ae635" class="anchor" href="#a4f931b01514a6603ac65347068ae635">&#x6A9;&#x62A;&#x627;&#x628;&#x62E;&#x648;&#x646;&#x647; reselect &#x686;&#x6CC;&#x647; &#x648; &#x686;&#x637;&#x648;&#x631;&#x6CC; &#x6A9;&#x627;&#x631; &#x645;&#x6CC;&#x200C;&#x6A9;&#x646;&#x647;&#x61F;</a></h3>
@@ -5474,6 +5612,9 @@ $ react-native log-android
 </span><span class="token template-punctuation string">`</span></span>
 </pre></span>
 <p>&#x627;&#x6CC;&#x646; &#x62F;&#x648; &#x62A;&#x627; &#x645;&#x62A;&#x63A;&#x6CC;&#x631;&#x60C; <code>Title</code> &#x648; <code>Wrapper</code>&#x60C; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A;&#x200C;&#x647;&#x627;&#x6CC;&#x6CC; &#x647;&#x633;&#x62A;&#x646; &#x6A9;&#x647; &#x645;&#x6CC;&#x200C;&#x62A;&#x648;&#x646;&#x6CC;&#x645; &#x645;&#x62B;&#x644; &#x647;&#x631; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A; &#x62F;&#x6CC;&#x6AF;&#x647; &#x627;&#x6CC; &#x631;&#x646;&#x62F;&#x631;&#x634;&#x648;&#x646; &#x6A9;&#x646;&#x6CC;&#x645;.</p>
+<div class="show-in-print">
+  <br>
+</div>
 <span align="left" dir="ltr">
 <pre data-role="codeBlock" data-info="jsx harmony" class="language-jsx"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Wrapper</span></span><span class="token punctuation">&gt;</span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Title</span></span><span class="token punctuation">&gt;</span></span><span class="token maybe-class-name">Lets</span> start first styled component<span class="token operator">!</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Title</span></span><span class="token punctuation">&gt;</span></span>
@@ -5481,6 +5622,11 @@ $ react-native log-android
 </pre></span>
 <p><strong><a class="backToTop" href="#ccb1ce3301184d61df78179e5eb44a43-q">&#x641;&#x647;&#x631;&#x633;&#x62A;</a></strong></p>
 </li>
+</ol>
+<div class="show-in-print">
+  <br>
+</div>
+<ol start="204">
 <li>
 <h3><a id="e49c20d2cb2e8143e39e78e5c24f1b41" class="anchor" href="#e49c20d2cb2e8143e39e78e5c24f1b41">Relay &#x686;&#x6CC;&#x647;&#x61F;</a></h3>
 <p>Relay &#x6CC;&#x647; &#x641;&#x631;&#x6CC;&#x645; &#x648;&#x631;&#x6A9; &#x62C;&#x627;&#x648;&#x627;&#x633;&#x6A9;&#x631;&#x6CC;&#x67E;&#x62A;&#x200C;&#x200C;&#x640;&#x647; &#x6A9;&#x647; &#x628;&#x631;&#x627;&#x6CC; &#x627;&#x631;&#x627;&#x626;&#x647; &#x6CC;&#x6A9; &#x644;&#x627;&#x6CC;&#x647; &#x62F;&#x627;&#x62F;&#x647; &#x648; &#x627;&#x631;&#x62A;&#x628;&#x627;&#x637; client-server &#x628;&#x647; &#x628;&#x631;&#x646;&#x627;&#x645;&#x647;&#x200C;&#x647;&#x627;&#x6CC; &#x648;&#x628; &#x628;&#x627; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x627;&#x632; &#x644;&#x627;&#x6CC;&#x647; view &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x645;&#x6CC;&#x634;&#x647;.</p>
@@ -5515,8 +5661,12 @@ $ react-native log-android
 <p><strong><a class="backToTop" href="#7cca3047ecda7b8fb33a842355826db5-q">&#x641;&#x647;&#x631;&#x633;&#x62A;</a></strong></p>
 </li>
 </ol>
-<h2 class="mume-header" id="%D9%85%D8%AA%D9%81%D8%B1%D9%82%D9%87">&#x645;&#x62A;&#x641;&#x631;&#x642;&#x647;</h2>
+<br> 
+<br> 
+<h2 class="mume-header" id="%D9%85%D8%B7%D8%A7%D9%84%D8%A8-%D9%85%D8%AA%D9%81%D8%B1%D9%82%D9%87">&#x645;&#x637;&#x627;&#x644;&#x628; &#x645;&#x62A;&#x641;&#x631;&#x642;&#x647;</h2>
 
+<br>
+<br>
 <ol start="206">
 <li>
 <h3><a id="04232c7424fee4a51f8410bf9b83d8c4" class="anchor" href="#04232c7424fee4a51f8410bf9b83d8c4">&#x627;&#x635;&#x644;&#x6CC;&#x200C;&#x62A;&#x631;&#x6CC;&#x646; &#x648;&#x6CC;&#x698;&#x6AF;&#x6CC;&#x200C;&#x647;&#x627;&#x6CC; &#x6A9;&#x62A;&#x627;&#x628;&#x62E;&#x648;&#x646;&#x647; reselect &#x6A9;&#x62F;&#x648;&#x645;&#x627; &#x647;&#x633;&#x62A;&#x646;&#x61F;</a></h3>
@@ -5545,9 +5695,10 @@ $ react-native log-android
   subtotalSelector<span class="token punctuation">,</span>
   taxPercentSelector<span class="token punctuation">,</span>
   <span class="token punctuation">(</span><span class="token parameter">subtotal<span class="token punctuation">,</span> taxPercent</span><span class="token punctuation">)</span> <span class="token arrow operator">=&gt;</span> subtotal <span class="token operator">*</span> <span class="token punctuation">(</span>taxPercent <span class="token operator">/</span> <span class="token number">100</span><span class="token punctuation">)</span>
-<span class="token punctuation">)</span>
-
-<span class="token keyword module">export</span> <span class="token keyword">const</span> totalSelector <span class="token operator">=</span> <span class="token function">createSelector</span><span class="token punctuation">(</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre></span>
+<span align="left" dir="ltr">
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token keyword module">export</span> <span class="token keyword">const</span> totalSelector <span class="token operator">=</span> <span class="token function">createSelector</span><span class="token punctuation">(</span>
   subtotalSelector<span class="token punctuation">,</span>
   taxSelector<span class="token punctuation">,</span>
   <span class="token punctuation">(</span><span class="token parameter">subtotal<span class="token punctuation">,</span> tax</span><span class="token punctuation">)</span> <span class="token arrow operator">=&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span> total<span class="token operator">:</span> subtotal <span class="token operator">+</span> tax <span class="token punctuation">}</span><span class="token punctuation">)</span>
@@ -5766,6 +5917,11 @@ $ react-native log-android
 </pre></span>
 <p><strong><a class="backToTop" href="#d8d481d8f29e204070d9d00bc820dc1b-q">&#x641;&#x647;&#x631;&#x633;&#x62A;</a></strong></p>
 </li>
+</ol>
+<div class="show-in-print">
+  <br>
+</div>
+<ol start="219">
 <li>
 <h3><a id="0b27ccd6d791744232fcb2693dbf1965" class="anchor" href="#0b27ccd6d791744232fcb2693dbf1965">&#x644;&#x627;&#x632;&#x645;&#x647; &#x647;&#x645;&#x647; state&#x647;&#x627; &#x631;&#x648; &#x62A;&#x648;&#x6CC; &#x631;&#x6CC;&#x62F;&#x627;&#x6A9;&#x633; &#x645;&#x62F;&#x6CC;&#x631;&#x6CC;&#x62A; &#x6A9;&#x646;&#x6CC;&#x645;&#x61F; &#x644;&#x632;&#x648;&#x645;&#x6CC; &#x628;&#x647; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x627;&#x632; state &#x62F;&#x627;&#x62E;&#x644;&#x6CC; &#x62F;&#x627;&#x631;&#x6CC;&#x645;&#x61F;</a></h3>
 <p>&#x627;&#x6CC;&#x646; &#x628;&#x647; &#x62A;&#x635;&#x645;&#x6CC;&#x645; &#x62A;&#x648;&#x633;&#x639;&#x647; &#x62F;&#x647;&#x646;&#x62F;&#x647; &#x628;&#x633;&#x62A;&#x6AF;&#x6CC; &#x62F;&#x627;&#x631;&#x647; &#x648;&#x644;&#x6CC; &#x628;&#x647;&#x62A;&#x631;&#x647; &#x6A9;&#x647; &#x627;&#x632; &#x639;&#x645;&#x648;&#x645;&#x6CC; &#x633;&#x627;&#x632;&#x6CC; &#x62F;&#x627;&#x62F;&#x647;&#x200C;&#x647;&#x627;&#x6CC; &#x63A;&#x6CC;&#x631;&#x636;&#x631;&#x648;&#x631;&#x6CC; &#x62E;&#x648;&#x62F;&#x62F;&#x627;&#x631;&#x6CC; &#x6A9;&#x646;&#x6CC;&#x646;. &#x627;&#x6CC;&#x646; &#x648;&#x638;&#x6CC;&#x641;&#x647; &#x62A;&#x648;&#x633;&#x639;&#x647; &#x62F;&#x647;&#x646;&#x62F;&#x647;&#x200C;&#x633;&#x62A; &#x6A9;&#x647; &#x628;&#x631;&#x631;&#x633;&#x6CC; &#x6A9;&#x646;&#x647; &#x686;&#x647; &#x646;&#x648;&#x639;&#x6CC; &#x627;&#x632; state&#x200C;&#x647;&#x627; &#x628;&#x631;&#x646;&#x627;&#x645;&#x647; &#x631;&#x648; &#x62A;&#x634;&#x6A9;&#x6CC;&#x644; &#x628;&#x62F;&#x647; &#x648; &#x647;&#x631; state &#x6A9;&#x62C;&#x627; &#x628;&#x627;&#x6CC;&#x62F; &#x642;&#x631;&#x627;&#x631; &#x628;&#x6AF;&#x6CC;&#x631;&#x647;. &#x628;&#x647; &#x634;&#x6A9;&#x644; &#x6A9;&#x644;&#x6CC; &#x627;&#x6CC;&#x646; &#x634;&#x631;&#x637;&#x200C;&#x647;&#x627; &#x631;&#x648; &#x642;&#x628;&#x644; &#x627;&#x632; &#x627;&#x646;&#x62A;&#x642;&#x627;&#x644; state &#x644;&#x648;&#x6A9;&#x627;&#x644; &#x628;&#x647; state &#x639;&#x645;&#x648;&#x645;&#x6CC; &#x628;&#x631;&#x631;&#x633;&#x6CC; &#x6A9;&#x646;&#x6CC;&#x646;:</p>
@@ -5793,6 +5949,11 @@ $ react-native log-android
 </pre></span>
 <p><strong><a class="backToTop" href="#91d1e3de938b6939f9aa6eedbea4a30e-q">&#x641;&#x647;&#x631;&#x633;&#x62A;</a></strong></p>
 </li>
+</ol>
+<div class="show-in-print">
+  <br>
+</div>
+<ol start="221">
 <li>
 <h3><a id="93b3c7be1b23b704a907de2b34170951" class="anchor" href="#93b3c7be1b23b704a907de2b34170951">&#x686;&#x637;&#x648;&#x631;&#x6CC; &#x628;&#x627; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x627;&#x632; &#x62A;&#x627;&#x628;&#x639; setState &#x627;&#x632; &#x631;&#x646;&#x62F;&#x631; &#x63A;&#x6CC;&#x631;&#x636;&#x631;&#x648;&#x631;&#x6CC; &#x62C;&#x644;&#x648;&#x6AF;&#x6CC;&#x631;&#x6CC; &#x6A9;&#x646;&#x6CC;&#x645;&#x61F;</a></h3>
 <p>&#x645;&#x6CC;&#x200C;&#x62A;&#x648;&#x646;&#x6CC;&#x645; &#x645;&#x642;&#x62F;&#x627;&#x631; &#x641;&#x639;&#x644;&#x6CC; &#x6CC;&#x647; state &#x631;&#x648; &#x628;&#x627; &#x645;&#x642;&#x62F;&#x627;&#x631; &#x645;&#x648;&#x62C;&#x648;&#x62F; &#x645;&#x642;&#x627;&#x6CC;&#x633;&#x647; &#x6A9;&#x646;&#x6CC;&#x645; &#x648; &#x62A;&#x635;&#x645;&#x6CC;&#x645; &#x628;&#x6AF;&#x6CC;&#x631;&#x6CC;&#x645; &#x6A9;&#x647; state &#x631;&#x648; &#x62A;&#x63A;&#x6CC;&#x6CC;&#x631; &#x628;&#x62F;&#x6CC;&#x645; &#x6CC;&#x627; &#x646;&#x647;. &#x645;&#x6CC;&#x62F;&#x648;&#x646;&#x6CC;&#x645; &#x627;&#x6AF;&#x647; &#x6CC;&#x647; setState &#x63A;&#x6CC;&#x631; &#x636;&#x631;&#x648;&#x631;&#x6CC; &#x627;&#x646;&#x62C;&#x627;&#x645; &#x628;&#x62F;&#x6CC;&#x645;&#x60C; &#x6A9;&#x627;&#x645;&#x67E;&#x648;&#x646;&#x646;&#x62A;&#x200C;&#x645;&#x648;&#x646; &#x631;&#x6CC;&#x200C;&#x631;&#x646;&#x62F;&#x631; &#x645;&#x6CC;&#x634;&#x647; &#x67E;&#x633; &#x627;&#x6AF;&#x647; &#x645;&#x642;&#x627;&#x62F;&#x6CC;&#x631; &#x6CC;&#x6A9;&#x633;&#x627;&#x646; &#x628;&#x648;&#x62F; &#x628;&#x631;&#x627;&#x6CC; &#x62C;&#x644;&#x648;&#x6AF;&#x6CC;&#x631;&#x6CC; &#x627;&#x632; &#x631;&#x646;&#x62F;&#x631; &#x645;&#x62C;&#x62F;&#x62F; &#x646;&#x628;&#x627;&#x6CC;&#x62F; &#x627;&#x633;&#x62A;&#x6CC;&#x62A; &#x631;&#x648; &#x645;&#x62C;&#x62F;&#x62F;&#x627; &#x633;&#x62A; &#x6A9;&#x646;&#x6CC;&#x645;. &#x628;&#x631;&#x627;&#x6CC; &#x645;&#x62B;&#x627;&#x644;&#x60C; &#x627;&#x637;&#x644;&#x627;&#x639;&#x627;&#x62A; &#x67E;&#x631;&#x648;&#x641;&#x627;&#x6CC;&#x644; &#x6A9;&#x627;&#x631;&#x628;&#x631; &#x62A;&#x648;&#x6CC; &#x645;&#x62B;&#x627;&#x644; &#x632;&#x6CC;&#x631; &#x628;&#x647; &#x635;&#x648;&#x631;&#x62A; &#x634;&#x631;&#x637;&#x6CC; &#x631;&#x646;&#x62F;&#x631; &#x634;&#x62F;&#x647;:</p>
@@ -5847,6 +6008,11 @@ $ react-native log-android
 </pre></span>
 <p><strong><a class="backToTop" href="#0813864f0430e3b5432c0e2d3c79f1d4-q">&#x641;&#x647;&#x631;&#x633;&#x62A;</a></strong></p>
 </li>
+</ol>
+<div class="show-in-print">
+  <br>
+</div>
+<ol start="226">
 <li>
 <h3><a id="f22f727886f77111bdfef5b329b045f6" class="anchor" href="#f22f727886f77111bdfef5b329b045f6">hook&#x647;&#x627; &#x686;&#x6CC; &#x647;&#x633;&#x62A;&#x646;&#x61F;</a></h3>
 <p>&#x62A;&#x627; &#x627;&#x6CC;&#x646;&#x62C;&#x627;&#x6CC; &#x645;&#x62B;&#x627;&#x644;&#x200C;&#x647;&#x627; &#x628;&#x627;&#x631;&#x647;&#x627; &#x627;&#x632; &#x647;&#x648;&#x6A9;&#x200C;&#x647;&#x627; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x6A9;&#x631;&#x62F;&#x6CC;&#x645;&#x60C; &#x647;&#x648;&#x6A9;&#x200C;&#x647;&#x627; &#x628;&#x647;&#x645;&#x648;&#x646; &#x627;&#x6CC;&#x646; &#x627;&#x645;&#x6A9;&#x627;&#x646; &#x631;&#x648; &#x645;&#x6CC;&#x62F;&#x646; &#x6A9;&#x647; &#x628;&#x62F;&#x648;&#x646; &#x646;&#x648;&#x634;&#x62A;&#x646; &#x6A9;&#x644;&#x627;&#x633; &#x627;&#x632; state&#x200C; &#x648; &#x648;&#x6CC;&#x698;&#x6AF;&#x6CC;&#x200C;&#x647;&#x627;&#x6CC; &#x62F;&#x6CC;&#x6AF;&#x647; &#x631;&#x6CC; &#x627;&#x6A9;&#x62A; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x6A9;&#x646;&#x6CC;&#x645;.<br>
@@ -5973,6 +6139,12 @@ $ react-native log-android
 </ol>
 <p><strong><a class="backToTop" href="#7c728b4e444b6f1f88059311d7d0a603-q">&#x641;&#x647;&#x631;&#x633;&#x62A;</a></strong></p>
 </li>
+</ol>
+<div class="show-in-print">
+  <br>
+  <br>
+</div>
+<ol start="233">
 <li>
 <h3><a id="1931c5572d221740d6c970f171a8b93b" class="anchor" href="#1931c5572d221740d6c970f171a8b93b">&#x686;&#x631;&#x627; &#x646;&#x6CC;&#x627;&#x632;&#x6CC; &#x628;&#x647; error boundaries &#x628;&#x631;&#x627;&#x6CC; event handler&#x647;&#x627; &#x646;&#x6CC;&#x633;&#x62A;&#x61F;</a></h3>
 <p>Error boundary&#x200C;&#x200C;&#x647;&#x627; &#x62E;&#x637;&#x627;&#x647;&#x627; &#x631;&#x648; &#x62A;&#x648;&#x6CC; event handler&#x200C;&#x647;&#x627; &#x646;&#x645;&#x6CC; &#x6AF;&#x6CC;&#x631;&#x646;. Event handler&#x200C;&#x647;&#x627; &#x628;&#x631; &#x62E;&#x644;&#x627;&#x641; &#x645;&#x62A;&#x62F; &#x631;&#x646;&#x62F;&#x631; &#x6CC;&#x627; lifecycle &#x645;&#x648;&#x642;&#x639; &#x631;&#x646;&#x62F;&#x631; &#x6A9;&#x631;&#x62F;&#x646; &#x627;&#x62A;&#x641;&#x627;&#x642; &#x646;&#x645;&#x6CC;&#x200C;&#x627;&#x641;&#x62A;&#x647; &#x6CC;&#x627; &#x641;&#x631;&#x627;&#x62E;&#x648;&#x627;&#x646;&#x6CC; &#x646;&#x645;&#x6CC;&#x634;&#x647;. &#x628;&#x646;&#x627;&#x628;&#x631;&#x627;&#x6CC;&#x646; &#x631;&#x6CC; &#x627;&#x6A9;&#x62A; &#x645;&#x6CC;&#x62F;&#x648;&#x646;&#x647; &#x6A9;&#x647; &#x627;&#x6CC;&#x646; &#x645;&#x62F;&#x644; &#x62E;&#x637;&#x627;&#x200C;&#x647;&#x627; &#x631;&#x648; &#x62A;&#x648;&#x6CC; event handler&#x200C;&#x647;&#x627; &#x686;&#x637;&#x648;&#x631;&#x6CC; &#x628;&#x627;&#x632;&#x6CC;&#x627;&#x628;&#x6CC; &#x6A9;&#x646;&#x647;.<br>
@@ -6060,6 +6232,11 @@ $ react-native log-android
 </ol>
 <p><strong><a class="backToTop" href="#ba45d9f61db853b105055460f196ad6c-q">&#x641;&#x647;&#x631;&#x633;&#x62A;</a></strong></p>
 </li>
+</ol>
+<div class="show-in-print">
+  <br>
+</div>
+<ol start="240">
 <li>
 <h3><a id="9b2ec35584b9fe098efdca54ea0341d6" class="anchor" href="#9b2ec35584b9fe098efdca54ea0341d6">&#x647;&#x62F;&#x641; &#x627;&#x635;&#x644;&#x6CC; &#x627;&#x632; &#x645;&#x62A;&#x62F; constructor &#x686;&#x6CC;&#x647;&#x61F;</a></h3>
 <p>constructor &#x628;&#x647; &#x637;&#x648;&#x631; &#x639;&#x645;&#x62F;&#x647; &#x628;&#x631;&#x627;&#x6CC; &#x62F;&#x648; &#x645;&#x646;&#x638;&#x648;&#x631; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x645;&#x6CC;&#x634;&#x647;:</p>
@@ -6122,15 +6299,12 @@ $ react-native log-android
     <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">state</span> <span class="token operator">=</span> <span class="token punctuation">{</span> hasError<span class="token operator">:</span> <span class="token boolean">false</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
-
   <span class="token keyword">static</span> <span class="token function">getDerivedStateFromError</span><span class="token punctuation">(</span><span class="token parameter">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token comment">// Update state so the next render will show the fallback UI.</span>
+    <span class="token comment">// Update state, next render will show the fallback UI</span>
     <span class="token keyword control-flow">return</span> <span class="token punctuation">{</span> hasError<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
-
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">state</span><span class="token punctuation">.</span><span class="token property-access">hasError</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      <span class="token comment">// You can render any custom fallback UI</span>
       <span class="token keyword control-flow">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span><span class="token maybe-class-name">Something</span> went wrong<span class="token punctuation">.</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 
@@ -6237,6 +6411,11 @@ $ react-native log-android
 </pre></span>
 <p><strong><a class="backToTop" href="#af1d6dc6166ab94b03455e38ff0136dc-q">&#x641;&#x647;&#x631;&#x633;&#x62A;</a></strong></p>
 </li>
+</ol>
+<div class="show-in-print">
+  <br>
+</div>
+<ol start="251">
 <li>
 <h3><a id="c3166544328cc0c8ae6418485d0f80cb" class="anchor" href="#c3166544328cc0c8ae6418485d0f80cb">&#x645;&#x632;&#x627;&#x6CC;&#x627;&#x6CC; &#x62D;&#x627;&#x644;&#x62A; strict &#x686;&#x6CC;&#x647;&#x61F;</a></h3>
 <p><code>&lt;StrictMode&gt;</code> &#x62A;&#x648;&#x6CC; &#x645;&#x648;&#x627;&#x631;&#x62F; &#x632;&#x6CC;&#x631; &#x628;&#x647; &#x6A9;&#x627;&#x631; &#x645;&#x6CC;&#x627;&#x62F;:</p>
@@ -6944,6 +7123,12 @@ ref<span class="token punctuation">.</span><span class="token property-access">c
 </pre></span>
 <p><strong><a class="backToTop" href="#21c6959b94f6c7fc80cf649742cf4acd-q">&#x641;&#x647;&#x631;&#x633;&#x62A;</a></strong></p>
 </li>
+</ol>
+<div class="show-in-print">
+  <br>
+  <br>
+</div>
+<ol start="287">
 <li>
 <h3><a id="e0cdd243bd268c6bc40c51971d29552e" class="anchor" href="#e0cdd243bd268c6bc40c51971d29552e">&#x627;&#x644;&#x6AF;&#x648;&#x631;&#x6CC;&#x62A;&#x645;&#x200C;&#x647;&#x627;&#x6CC; diffing &#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x686;&#x6CC; &#x647;&#x633;&#x62A;&#x646;&#x61F;</a></h3>
 <p>&#x631;&#x6CC;&#x200C;&#x627;&#x6A9;&#x62A; &#x646;&#x6CC;&#x627;&#x632; &#x628;&#x647; &#x627;&#x633;&#x62A;&#x641;&#x627;&#x62F;&#x647; &#x627;&#x632; &#x627;&#x644;&#x6AF;&#x648;&#x631;&#x6CC;&#x62A;&#x645;&#x200C;&#x647;&#x627; &#x62F;&#x627;&#x631;&#x647; &#x62A;&#x627; &#x628;&#x641;&#x647;&#x645;&#x647; &#x686;&#x637;&#x648;&#x631; &#x628;&#x647; &#x637;&#x648;&#x631; &#x645;&#x648;&#x62B;&#x631; UI &#x631;&#x648; &#x628;&#x631;&#x627;&#x6CC; &#x645;&#x637;&#x627;&#x628;&#x642;&#x62A; &#x628;&#x627; &#x622;&#x62E;&#x631;&#x6CC;&#x646; &#x62F;&#x631;&#x62E;&#x62A; &#x628;&#x647;&#x200C;&#x631;&#x648;&#x632; &#x6A9;&#x646;&#x647;. &#x627;&#x644;&#x6AF;&#x648;&#x631;&#x6CC;&#x62A;&#x645;&#x200C;&#x647;&#x627;&#x6CC; &#x645;&#x62E;&#x62A;&#x644;&#x641;&#x6CC; &#x62F;&#x631; &#x62D;&#x627;&#x644; &#x62A;&#x648;&#x644;&#x6CC;&#x62F; &#x62D;&#x62F;&#x627;&#x642;&#x644; &#x62A;&#x639;&#x62F;&#x627;&#x62F; &#x639;&#x645;&#x644;&#x6CC;&#x627;&#x62A; &#x628;&#x631;&#x627;&#x6CC; &#x62A;&#x628;&#x62F;&#x6CC;&#x644; &#x6CC;&#x647; &#x62F;&#x631;&#x62E;&#x62A; &#x628;&#x647; &#x62F;&#x631;&#x62E;&#x62A; &#x62F;&#x6CC;&#x6AF;&#x647; &#x647;&#x633;&#x62A;&#x646;. &#x628;&#x627; &#x627;&#x6CC;&#x646; &#x62D;&#x627;&#x644;&#x60C; &#x627;&#x644;&#x6AF;&#x648;&#x631;&#x6CC;&#x62A;&#x645;&#x200C;&#x647;&#x627; &#x628;&#x647; &#x62A;&#x631;&#x62A;&#x6CC;&#x628; O(n3) &#x62F;&#x627;&#x631;&#x627;&#x6CC; &#x67E;&#x6CC;&#x686;&#x6CC;&#x62F;&#x6AF;&#x6CC; &#x647;&#x633;&#x62A;&#x646;&#x60C; &#x62C;&#x627;&#x6CC;&#x6CC; &#x6A9;&#x647; n &#x62A;&#x639;&#x62F;&#x627;&#x62F; &#x639;&#x646;&#x627;&#x635;&#x631; &#x645;&#x648;&#x62C;&#x648;&#x62F; &#x62F;&#x631; &#x62F;&#x631;&#x62E;&#x62A; &#x647;&#x633;&#x62A;&#x634;.<br>
